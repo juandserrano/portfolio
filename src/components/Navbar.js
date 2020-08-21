@@ -24,7 +24,7 @@ import {
   ContactMail,
   Keyboard,
 } from "@material-ui/icons";
-import avatar from "../silent.jpg";
+import avatar from "../images/avatar2.png";
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -45,6 +45,8 @@ const useStyles = makeStyles((theme) => ({
     margin: "0.5rem auto",
     minWidth: 100,
     minHeight: 100,
+    opacity: 1,
+    border: "solid tan",
   },
   listItem: {
     color: "tan",

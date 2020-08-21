@@ -3,26 +3,28 @@ import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
 import { Translate } from "@material-ui/icons";
-import avatar from "../silent.jpg";
+import avatar from "../images/avatar1.png";
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
   avatar: {
     margin: "0.5rem auto",
-    minWidth: 100,
-    minHeight: 100,
+    minWidth: 200,
+    minHeight: 200,
+    border: "solid black",
   },
   title: {
     color: "#ffaa00",
-    width: "100vw",
     textShadow: "2px 2px #000000",
     fontSize: "5vh",
+    minWidth: 230,
   },
   subtitle: {
     color: "tan",
-    width: "100vw",
-    textShadow: "2px 2px 4px #000000",
+    textShadow: "2px 2px 0px #000000",
     fontSize: "3vh",
+    textAlign: "center",
+    minWidth: 235,
   },
   completeContainer: {
     position: "absolute",
@@ -31,6 +33,13 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     transform: "translate(-50%, -50%)",
     zIndex: 1,
+    backgroundColor: "rgba(0,0,0,0.4)",
+    borderRadius: "70px",
+    padding: "20px 40px 20px 40px",
+    width: 413,
+    [theme.breakpoints.down("sm")]: {
+      width: "auto",
+    },
   },
 }));
 

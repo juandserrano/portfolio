@@ -10,14 +10,14 @@ const useStyles = makeStyles({
     zIndex: -1,
     height: "100vh",
     width: "100vw",
-    opacity: 0.1,
+    opacity: 0.4,
   },
 });
 
 const Home = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.div}>
       <Particles
         className={classes.particlesCanvas}
         params={{
