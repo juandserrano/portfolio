@@ -1,42 +1,70 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from "react";
+import { Typography, Avatar, Grid, Box } from "@material-ui/core";
+import Typed from "react-typed";
+import { makeStyles } from "@material-ui/core/styles";
+import { Translate } from "@material-ui/icons";
+import avatar from "../silent.jpg";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+// CSS STYLES
+const useStyles = makeStyles((theme) => ({
+  avatar: {
+    margin: "0.5rem auto",
+    minWidth: 100,
+    minHeight: 100,
+  },
+  title: {
+    color: "#ffaa00",
+    width: "100vw",
+    textShadow: "2px 2px #000000",
+    fontSize: "5vh",
+  },
+  subtitle: {
+    color: "tan",
+    width: "100vw",
+    textShadow: "2px 2px 4px #000000",
+    fontSize: "3vh",
+  },
+  completeContainer: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    textAlign: "center",
+    transform: "translate(-50%, -50%)",
+    zIndex: 1,
+  },
+}));
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Header = () => {
+  const classes = useStyles();
+  return (
+    <Box className={classes.completeContainer}>
+      <Avatar
+        className={classes.avatar}
+        src={avatar}
+        alt="Juan Diego Serrano"
+      />
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+      <Typography className={classes.title} align="center" variant="h4">
+        <Typed strings={["Juan Diego Serrano"]} typeSpeed={80} />
+      </Typography>
 
-export default Header
+      <br />
+      <Typography className={classes.subtitle} align="center" variant="h5">
+        <Typed
+          strings={[
+            "Frontend",
+            "Backend",
+            "MERN Stack",
+            "Project Management",
+            "Logistics",
+          ]}
+          typeSpeed={50}
+          loop
+          backSpeed={30}
+        />
+      </Typography>
+    </Box>
+  );
+};
+
+export default Header;

@@ -1,0 +1,10 @@
+body {
+  background:
+         /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */
+      url("https://pixabay.com/get/52e4d5464355af14f6d1867dda35367b1c38d7e35056784e_1920.jpg")
+      no-repeat right center fixed;
+}
