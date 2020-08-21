@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
     opacity: 0.9,
+    paddingTop: 60,
   },
   timeLine: {
     position: "relative",
@@ -30,30 +31,6 @@ const useStyles = makeStyles((theme) => ({
       "&:before": {
         left: "calc(50% - 1px)",
         right: "auto",
-      },
-    },
-  },
-  timeLineYear: {
-    textAlign: "center",
-    maxWidth: "9.375rem",
-    margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
-    background: "tomato",
-    color: "white",
-    lineHeight: 1,
-    padding: "0.5rem 0 1rem",
-    "&:before": {
-      display: "none",
-    },
-    [theme.breakpoints.up("md")]: {
-      textAlign: "center",
-      margin: "0 auto",
-      "&:nth-of-type(2n)": {
-        float: "none",
-        margin: "0 auto",
-      },
-      "&:nth-of-type(2n):before": {
-        display: "none",
       },
     },
   },
@@ -92,6 +69,30 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  timeLineYear: {
+    textAlign: "center",
+    maxWidth: "9.375rem",
+    margin: "0 3rem 0 auto",
+    fontSize: "1.8rem",
+    background: "tomato",
+    color: "white",
+    lineHeight: 1,
+    padding: "0.5rem 0 1rem",
+    "&:before": {
+      display: "none",
+    },
+    [theme.breakpoints.up("md")]: {
+      textAlign: "center",
+      margin: "0 auto",
+      "&:nth-of-type(2n)": {
+        float: "none",
+        margin: "0 auto",
+      },
+      "&:nth-of-type(2n):before": {
+        display: "none",
+      },
+    },
+  },
   heading: {
     color: "tomato",
     padding: "3rem 0",
@@ -112,147 +113,71 @@ const Resume = () => {
       <Navbar titulo={"Resume"} />
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
-          working experience
+          Work Experience
         </Typography>
-        <Box component="div" className={classes.timeLine}>
-          <Typography variant="h2" className={classes.timeLineYear}>
-            2013
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
+
+        {/* ITEMS */}
+        {experience.map((item) => (
+          <Box component="div" className={classes.timeLine}>
             <Typography
-              variant="h5"
-              align="center"
-              className={classes.subHeading}
+              variant="h2"
+              className={`${classes.timeLineYear} ${classes.timeLineItem}`}
             >
-              Web Design
+              {item.year}
             </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            >
-              Fundacion Sol de los Andes
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              align="center"
-              style={{ color: "tan" }}
-            >
-              Lorem consequat fugiat laborum excepteur ex deserunt Lorem.
-              Consequat excepteur occaecat aliquip exercitation anim cupidatat
-              nulla adipisicing veniam in Lorem anim. Cillum est deserunt
-              proident et reprehenderit aute. Sunt eiusmod in commodo culpa
-              officia anim velit nisi ullamco nulla elit cillum deserunt Lorem.
-              Occaecat velit qui elit esse minim culpa excepteur occaecat
-              ullamco commodo quis adipisicing laboris magna.
-            </Typography>
+            <Box component="div" className={classes.timeLineItem}>
+              <Typography
+                variant="h5"
+                align="center"
+                className={classes.subHeading}
+              >
+                {item.experience}
+              </Typography>
+              <Typography
+                variant="body1"
+                align="center"
+                style={{ color: "tomato" }}
+              >
+                {item.company}
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                align="center"
+                style={{ color: "tan" }}
+              >
+                {item.text}
+              </Typography>
+            </Box>
           </Box>
-        </Box>
-        <Box component="div" className={classes.timeLine}>
-          <Typography variant="h2" className={`${classes.timeLineYear}`}>
-            2014
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography
-              variant="h5"
-              align="center"
-              className={classes.subHeading}
-            >
-              Logistics
-            </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            >
-              Newell
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              align="center"
-              style={{ color: "tan" }}
-            >
-              Lorem consequat fugiat laborum excepteur ex deserunt Lorem.
-              Consequat excepteur occaecat aliquip exercitation anim cupidatat
-              nulla adipisicing veniam in Lorem anim. Cillum est deserunt
-              proident et reprehenderit aute. Sunt eiusmod in commodo culpa
-              officia anim velit nisi ullamco nulla elit cillum deserunt Lorem.
-              Occaecat velit qui elit esse minim culpa excepteur occaecat
-              ullamco commodo quis adipisicing laboris magna.
-            </Typography>
-          </Box>
-        </Box>
-        <Box component="div" className={classes.timeLine}>
-          <Typography variant="h2" className={`${classes.timeLineYear}`}>
-            2015
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography
-              variant="h5"
-              align="center"
-              className={classes.subHeading}
-            >
-              Javascript
-            </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            >
-              Newell Brands
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              align="center"
-              style={{ color: "tan" }}
-            >
-              Lorem consequat fugiat laborum excepteur ex deserunt Lorem.
-              Consequat excepteur occaecat aliquip exercitation anim cupidatat
-              nulla adipisicing veniam in Lorem anim. Cillum est deserunt
-              proident et reprehenderit aute. Sunt eiusmod in commodo culpa
-              officia anim velit nisi ullamco nulla elit cillum deserunt Lorem.
-              Occaecat velit qui elit esse minim culpa excepteur occaecat
-              ullamco commodo quis adipisicing laboris magna.
-            </Typography>
-          </Box>
-        </Box>
-        <Box component="div" className={classes.timeLine}>
-          <Typography variant="h2" className={`${classes.timeLineYear}`}>
-            2016
-          </Typography>
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography
-              variant="h5"
-              align="center"
-              className={classes.subHeading}
-            >
-              MongoDB
-            </Typography>
-            <Typography
-              variant="body1"
-              align="center"
-              style={{ color: "tomato" }}
-            >
-              Own Projects
-            </Typography>
-            <Typography
-              variant="subtitle1"
-              align="center"
-              style={{ color: "tan" }}
-            >
-              Lorem consequat fugiat laborum excepteur ex deserunt Lorem.
-              Consequat excepteur occaecat aliquip exercitation anim cupidatat
-              nulla adipisicing veniam in Lorem anim. Cillum est deserunt
-              proident et reprehenderit aute. Sunt eiusmod in commodo culpa
-              officia anim velit nisi ullamco nulla elit cillum deserunt Lorem.
-              Occaecat velit qui elit esse minim culpa excepteur occaecat
-              ullamco commodo quis adipisicing laboris magna.
-            </Typography>
-          </Box>
-        </Box>
+        ))}
       </Box>
     </>
   );
 };
+
+const experience = [
+  {
+    year: "2012-2020",
+    company: "Newell Brands",
+    experience: "LATAM Engineering Lead/LATAM Logistics Coordinator",
+    text: `Project Management, Productivity, Operational Analysis & Optimization,
+          Layout Design & Slotting, Inventory Management, Tendering & Negotiation,
+          Distribution Networks Analysis, BW Reporting, Lead Regional Productivity Engineer,
+          SAP Business Process Champion, Data Analysis`,
+  },
+  {
+    year: "2010",
+    company: "Newell Rubbermaid",
+    experience: "Logistics Analyst",
+    text: `Operational Analysis & Optimization,
+          Layout Design & Slotting, Inventory Management, Negotiation`,
+  },
+  {
+    year: "2008",
+    company: "Newell Rubbermaid",
+    experience: "Logistics Analyst",
+    text: `Procurement, Inventory Management, Reporting`,
+  },
+];
 
 export default Resume;

@@ -33,6 +33,13 @@ const useStyles = makeStyles((theme) => ({
     background: "#511",
     height: "100%",
   },
+  Navbar: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    zIndex: 999,
+  },
   avatar: {
     display: "block",
     margin: "0.5rem auto",
@@ -107,7 +114,7 @@ const Navbar = ({ titulo }) => {
 
   return (
     <>
-      <Box component="nav">
+      <Box component="nav" className={classes.Navbar}>
         <AppBar
           position="static"
           style={{
