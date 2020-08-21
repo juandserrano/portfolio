@@ -10,6 +10,7 @@ const useStyles = makeStyles({
     zIndex: -1,
     height: "100vh",
     width: "100vw",
+    opacity: 0.1,
   },
 });
 

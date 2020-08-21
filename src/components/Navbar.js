@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import {
@@ -16,7 +17,7 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 import {
-  ArrowBack,
+  Menu,
   AssignmentInd,
   Home,
   Apps,
@@ -47,10 +48,12 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/resume",
   },
   {
     listIcon: <Apps />,
@@ -64,7 +67,7 @@ const menuItems = [
 
 //  COMPONENT RENDERS HERE
 
-const Navbar = () => {
+const Navbar = ({ titulo }) => {
   const [state, setState] = useState({
     right: false,
   });
@@ -88,7 +91,7 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button>
+          <ListItem button key={key} component={Link} to={lsItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {lsItem.listIcon}
             </ListItemIcon>
@@ -113,7 +116,7 @@ const Navbar = () => {
         >
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack
+              <Menu
                 style={{
                   color: "tomato",
                 }}
@@ -125,7 +128,7 @@ const Navbar = () => {
                 color: "tan",
               }}
             >
-              Portfolio
+              {titulo}
             </Typography>
             <MobilRightMenuSlider
               open={state.right}
