@@ -17,14 +17,14 @@ const useStyles = makeStyles((theme) => ({
     color: "#ffaa00",
     textShadow: "2px 2px #000000",
     fontSize: "5vh",
-    minWidth: 230,
+    minWidth: 260,
   },
   subtitle: {
     color: "tan",
     textShadow: "2px 2px 0px #000000",
     fontSize: "3vh",
     textAlign: "center",
-    minWidth: 235,
+    minWidth: 240,
   },
   completeContainer: {
     position: "absolute",
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0,0,0,0.4)",
     borderRadius: "70px",
     padding: "20px 40px 20px 40px",
-    width: 413,
+    width: 450,
     [theme.breakpoints.down("sm")]: {
       width: "auto",
     },

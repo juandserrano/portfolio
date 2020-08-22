@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
+import Footer from "./Footer";
 import {
   AppBar,
   Toolbar,
@@ -32,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     width: 250,
     background: "#511",
     height: "100%",
+    paddingTop: 40,
   },
   Navbar: {
     position: "fixed",
@@ -47,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: 100,
     opacity: 1,
     border: "solid tan",
+    marginBottom: 20,
   },
   listItem: {
     color: "tan",
@@ -113,6 +116,7 @@ const Navbar = ({ titulo }) => {
           </ListItem>
         ))}
       </List>
+      <Footer />
     </Box>
   );
 

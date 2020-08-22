@@ -1,5 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
+import { Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Navbar from "./Navbar";
 import Header from "./Header";
@@ -12,12 +13,16 @@ const useStyles = makeStyles({
     width: "100vw",
     opacity: 0.4,
   },
+  mainBox: {
+    height: "100vh",
+    //background: "rgba(0,0,0,0)",
+  },
 });
 
 const Home = () => {
   const classes = useStyles();
   return (
-    <div className={classes.div}>
+    <Box className={classes.mainBox}>
       <Particles
         className={classes.particlesCanvas}
         params={{
@@ -60,7 +65,7 @@ const Home = () => {
       />
       <Navbar />
       <Header />
-    </div>
+    </Box>
   );
 };
 
