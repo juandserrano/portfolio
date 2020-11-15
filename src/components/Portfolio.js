@@ -11,6 +11,8 @@ import {
 import Navbar from "./Navbar";
 import dashboardImg from "../images/dashboard.png";
 import dndImg from "../images/dnd.png";
+import serraImg from "../images/serra.PNG";
+import weatherImg from "../images/weather.PNG";
 
 const useStyles = makeStyles((theme) => ({
   cardPic: {
@@ -119,6 +121,19 @@ const projectos = [
     descripcion:
       "Simple game to practice HTML, CSS, mongoose/MongoDB with an expressjs backend - Vuejs, MongoDB",
     link: "https://dndslayer.herokuapp.com/",
+  },
+  {
+    nombre: "Weather App",
+    imagen: weatherImg,
+    descripcion:
+      "PWA that shaws weather information using openweathermap's API - Reactjs",
+    link: "https://t-weather.jserrano.net/",
+  },
+  {
+    nombre: "Serra - Music Player",
+    imagen: serraImg,
+    descripcion: "Chill out with some free music",
+    link: "https://music.jserrano.net",
   },
 ];
 
