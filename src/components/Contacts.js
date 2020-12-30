@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Box, Grid, Typography, Button, TextField } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/styles";
 import { ContactMail, ContactPhone, Send } from "@material-ui/icons";
@@ -59,7 +59,41 @@ const useStyles = makeStyles({
   },
 });
 
+
+
 const Contacts = () => {
+
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [company, setCompany] = useState("")
+  const [textoBoton, setTextoBoton] = useState("Contact Me!")
+
+  const handleName = (e) => {
+    setName(e.target.value)
+  }
+  const handleEmail = (e) => {
+    setEmail(e.target.value)
+  }
+  const handleCompany = (e) => {
+    setCompany(e.target.value)
+  }
+
+  const submitFields = () => {
+    console.log("submitted: " + name + email + company)
+    
+    toggleThanks()
+  }
+  const volver = () => {
+    setName("")
+    setEmail("")
+    setCompany("")
+    setTextoBoton("Contact Me!")
+  }
+  const toggleThanks = () => {
+    setTextoBoton("Thanks!")
+    setTimeout(volver, 3000);
+  }
+
   const classes = useStyles();
   return (
     <Box component="div" className={classes.mainDiv}>
@@ -84,6 +118,8 @@ const Contacts = () => {
             inputProps={{ style: { color: "white" } }}
             margin="dense"
             size="medium"
+            value={name}
+            onChange={handleName}
           />
           <br />
         </Grid>
@@ -95,6 +131,8 @@ const Contacts = () => {
             inputProps={{ style: { color: "white" } }}
             margin="dense"
             size="medium"
+            value={email}
+            onChange={handleEmail}
           />
           <br />
         </Grid>
@@ -106,6 +144,8 @@ const Contacts = () => {
             inputProps={{ style: { color: "white" } }}
             margin="dense"
             size="medium"
+            value={company}
+            onChange={handleCompany}
           />
           <br />
         </Grid>
@@ -115,8 +155,9 @@ const Contacts = () => {
             fullWidth={false}
             endIcon={<Send />}
             className={classes.button}
+            onClick={submitFields}
           >
-            Contact me!
+            {textoBoton}
           </Button>
         </Grid>
       </Grid>

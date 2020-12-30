@@ -109,18 +109,17 @@ const Portfolio = () => {
 
 const projectos = [
   {
+    nombre: "Serra - Music Player",
+    imagen: serraImg,
+    descripcion: "Chill out with some free music",
+    link: "https://music.jserrano.net",
+  },
+  {
     nombre: "Dashboard",
     imagen: dashboardImg,
     descripcion:
       "Personal dashboard with to do list, activity tracker, pomodoro timer, clock, quote and joke of the day. - Vuejs, MongoDB, API calls, Authorization, Authentication with JsonWebTokens",
     link: "https://dashboard-jds.now.sh/",
-  },
-  {
-    nombre: "DnD Monster Hunt",
-    imagen: dndImg,
-    descripcion:
-      "Simple game to practice HTML, CSS, mongoose/MongoDB with an expressjs backend - Vuejs, MongoDB",
-    link: "https://dndslayer.herokuapp.com/",
   },
   {
     nombre: "Weather App",
@@ -130,11 +129,14 @@ const projectos = [
     link: "https://t-weather.jserrano.net/",
   },
   {
-    nombre: "Serra - Music Player",
-    imagen: serraImg,
-    descripcion: "Chill out with some free music",
-    link: "https://music.jserrano.net",
+    nombre: "DnD Monster Hunt",
+    imagen: dndImg,
+    descripcion:
+      "Simple game to practice HTML, CSS, mongoose/MongoDB with an expressjs backend - Vuejs, MongoDB",
+    link: "https://dndslayer.herokuapp.com/",
   },
+  
+  
 ];
 
 export default Portfolio;

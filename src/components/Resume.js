@@ -157,27 +157,25 @@ const Resume = () => {
 
 const experience = [
   {
-    year: "2012-2020",
-    company: "Newell Brands",
-    experience: "LATAM Engineering Lead/LATAM Logistics Coordinator",
-    text: `Project Management, Productivity, Operational Analysis & Optimization,
-          Layout Design & Slotting, Inventory Management, Tendering & Negotiation,
-          Distribution Networks Analysis, BW Reporting, Lead Regional Productivity Engineer,
-          SAP Business Process Champion, Data Analysis`,
+    year: "2008-Current",
+    company: "Fundacion Sol de los Andes",
+    experience: "Computer Support Technician",
+    text: `IT Support & Troubleshooting | Software/Hardware Upgrades`,
   },
   {
-    year: "2010",
+    year: "2012-2020",
+    company: "Newell Brands",
+    experience: "LATAM Engineering Lead",
+    text: `IT Support |Project Management | SAP Business Process Champion | BW & WM Reporting | Data Analysis | Productivity/KPIs control | Application deployment & automation | RFQ/RFP design`,
+  },
+  {
+    year: "2008-2010",
     company: "Newell Rubbermaid",
     experience: "Logistics Analyst",
     text: `Operational Analysis & Optimization,
           Layout Design & Slotting, Inventory Management, Negotiation`,
   },
-  {
-    year: "2008",
-    company: "Newell Rubbermaid",
-    experience: "Logistics Analyst",
-    text: `Procurement, Inventory Management, Reporting`,
-  },
+  
 ];
 
 export default Resume;
