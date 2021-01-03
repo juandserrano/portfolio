@@ -63,7 +63,7 @@ const Home = () => {
           },
         }}
       />
-      <Navbar />
+      
       <Header />
     </Box>
   );

@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   mainBox: {
-    height: "100vh",
+    paddingTop: 60,
+   // height: "100vh",
   },
   boton: {
     justifySelf: "center",
@@ -49,12 +50,7 @@ const Portfolio = () => {
 
   return (
     <Box className={classes.mainBox}>
-      <Navbar titulo={"Portfolio"} />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      
       <Typography variant="h2" className={classes.header} align="center">
         Projects
       </Typography>

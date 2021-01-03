@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+li:hover {
+    color: tan;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+
+nav {
+    background-color: rgb(28, 30, 39);
+    height: 50px;
+    width: 100vw;
+    display: flex;   
+    position: fixed;
+    z-index: 50;
+}

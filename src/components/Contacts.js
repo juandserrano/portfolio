@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Box, Grid, Typography, Button, TextField } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/styles";
-import { ContactMail, ContactPhone, Send } from "@material-ui/icons";
+import { Autorenew, ContactMail, ContactPhone, Send } from "@material-ui/icons";
 import Navbar from "./Navbar";
 
 const InputField = withStyles({
@@ -28,22 +28,25 @@ const InputField = withStyles({
 
 const useStyles = makeStyles({
   form: {
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    position: "absolute",
+    // top: "50%",
+    // left: "50%",
+    // transform: "translate(50%, 50%)",
+    // position: "relative",
     background: "rgba(0,0,0,0.6)",
     padding: 30,
     borderRadius: 20,
     width: "95%",
     maxWidth: 500,
     boxShadow: "2px 2px 2px black",
+    margin: "0 auto"
   },
   mainDiv: {
-    height: "100%",
+    height: "100vh",
+    display: "flex",
+    alignItems: "center",
   },
   mainGrid: {
-    marginTop: 100,
+   // marginTop: 100,
   },
   button: {
     color: "blue",
@@ -97,7 +100,7 @@ const Contacts = () => {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.mainDiv}>
-      <Navbar titulo="Contact me" />
+      
 
       <Grid
         container

@@ -64,8 +64,8 @@ const Header = () => {
             "Frontend",
             "Backend",
             "MERN Stack",
+            "IT Consulting",
             "Project Management",
-            "Logistics",
           ]}
           typeSpeed={50}
           loop
