@@ -15,6 +15,7 @@ const useStyles = makeStyles({
     transform: "translateY(-50%)",
     borderRadius: "30px",
     backgroundColor: "rgba(220,220,220,0.9)",
+    boxShadow: "2px 2px 5px black"
     }
   });
 

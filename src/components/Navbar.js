@@ -1,24 +1,39 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Link } from "react-scroll"
 import "./Navbar.css"
+import MenuIcon from '@material-ui/icons/Menu';
 
 const Navbar = () => {
 
-  const [activeLink, setActiveLink] = useState([0,0,0,0]);
-  const toggleActiveLink = (linkNumber) => {
-    setActiveLink[0,1,2,3] = 0;
-    setActiveLink[linkNumber] = 1;
-  }
+  
   return (
-    <nav>
-      
-          <Link className={activeLink[0] === 1 ? "activeLink" : "navLink"} to="home" spy={true} smooth={true} duration={500} onClick={toggleActiveLink(0)}>home</Link>
-          <Link className={activeLink[1] === 1 ? "activeLink" : "navLink"} to="about" spy={true} smooth={true} duration={500} onClick={toggleActiveLink(1)}>about</Link>
-          <Link className={activeLink[2] === 1 ? "activeLink" : "navLink"} to="resume" spy={true} smooth={true} duration={500} onClick={toggleActiveLink(2)}>resume</Link>
-          <Link className={activeLink[3] === 1 ? "activeLink" : "navLink"} to="portfolio" spy={true} smooth={true} duration={500} onClick={toggleActiveLink(3)}>portfolio</Link>
-          <Link className={activeLink[4] === 1 ? "activeLink" : "navLink"} to="contact" spy={true} smooth={true} duration={500} onClick={toggleActiveLink(4)}>contact</Link>
-      
-    </nav>
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <MenuIcon />
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <Link className="nav-link" to="home" spy={true} smooth={true} duration={500}>home</Link>
+          </li>
+          <li class="nav-item">
+            <Link className="nav-link" to="about" spy={true} smooth={true} duration={500}>about</Link>
+          </li>
+          <li class="nav-item">
+            <Link className="nav-link" to="resume" spy={true} smooth={true} duration={500}>resume</Link>
+          </li>
+          <li class="nav-item">
+            <Link className="nav-link" to="portfolio" spy={true} smooth={true} duration={500}>portfolio</Link>
+          </li>
+          <li class="nav-item">
+            <Link className="nav-link" to="contact" spy={true} smooth={true} duration={500}>contact</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   )
 }
 

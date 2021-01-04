@@ -5,6 +5,7 @@
 
 .aboutTitle {
     color: #FFaa00;
+    text-shadow: 2px 2px 5px black;
     text-transform: uppercase;
     font-family: Helvetica;
     font-size: 34px;

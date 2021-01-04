@@ -97,7 +97,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFAA00",
     padding: "3rem 0",
     textTransform: "uppercase",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    textShadow: "2px 2px 5px black",
   },
   subHeading: {
     color: "white",
