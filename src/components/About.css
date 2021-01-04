@@ -1,0 +1,33 @@
+.mainInfo {
+    display: flex;
+    align-items: center;
+}
+
+.aboutTitle {
+    color: #FFaa00;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+
+#myPhoto {
+    width: 310px;
+    border-radius: 10px;
+}
+#text {
+    width: 70%;
+    padding-left: 30px;
+    font-family: Helvetica;
+}
+@media screen and (max-width: 992px) {
+    #myPhoto {
+      display: none;
+    }
+    #text {
+        width: 100%;
+        padding-left: 0;
+    }
+  }
+

@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "rgb(30,30,40)",
     opacity: 0.9,
     paddingTop: 60,
   },
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
+      borderColor: "#FFAA00 #FFAA00 transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
+        borderColor: "transparent transparent #FFAA00 #FFAA00",
       },
     },
   },
@@ -73,11 +73,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
-    background: "tomato",
-    color: "white",
+    fontSize: "1.2rem",
+    background: "#FFAA00",
+    color: "rgb(30, 30, 40)",
     lineHeight: 1,
-    padding: "0.5rem 0 1rem",
+    padding: "0.5rem 0 0.5rem",
     "&:before": {
       display: "none",
     },
@@ -94,9 +94,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "tomato",
+    color: "#FFAA00",
     padding: "3rem 0",
     textTransform: "uppercase",
+    fontWeight: "bold"
   },
   subHeading: {
     color: "white",
@@ -113,7 +114,7 @@ const Resume = () => {
      
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
-          Work Experience
+          Experience
         </Typography>
 
         {/* ITEMS */}
@@ -136,7 +137,7 @@ const Resume = () => {
               <Typography
                 variant="body1"
                 align="center"
-                style={{ color: "tomato" }}
+                style={{ color: "#FFAA00" }}
               >
                 {item.company}
               </Typography>
@@ -157,17 +158,18 @@ const Resume = () => {
 
 const experience = [
   {
-    year: "2008-Current",
-    company: "Fundacion Sol de los Andes",
-    experience: "Computer Support Technician",
-    text: `IT Support & Troubleshooting | Software/Hardware Upgrades`,
-  },
-  {
     year: "2012-2020",
     company: "Newell Brands",
     experience: "LATAM Engineering Lead",
-    text: `IT Support |Project Management | SAP Business Process Champion | BW & WM Reporting | Data Analysis | Productivity/KPIs control | Application deployment & automation | RFQ/RFP design`,
+    text: `IT Support | Project Management | SAP Business Process Champion | BW & WM Reporting | Data Analysis | Productivity/KPIs control | Application deployment & automation | RFQ/RFP`,
   },
+  {
+    year: "2008-Current",
+    company: "Fundacion Sol de los Andes",
+    experience: "Computer Support Technician",
+    text: `IT Consulting | End-User Support & Troubleshooting | Software/Hardware Upgrades`,
+  },
+  
   {
     year: "2008-2010",
     company: "Newell Rubbermaid",

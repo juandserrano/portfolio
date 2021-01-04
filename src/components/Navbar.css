@@ -3,31 +3,38 @@
     padding: 0;
 }
 
-li {
-    color: rgb(221, 221, 221);
+.navLink {
+    color: rgb(192, 192, 192);
     text-transform: uppercase;
     line-height: 50px;
+    font-family: "Helvetica";
+    font-weight: 600;
 }
 
-li:hover {
-    color: tan;
+.navLink:hover {
+    color: #FFAA00;
     cursor: pointer;
 }
 
-ul {
-    list-style: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    
+.activeLink {
+    color: #FFAA00;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-family: "Helvetica";
+    font-weight: 600;
+}
+
+.activeLink:hover {
+    color: #FFAA00;
+    cursor: pointer;
 }
 
 nav {
-    background-color: rgb(28, 30, 39);
+    background-color: rgb(30, 30, 40);
     height: 50px;
-    width: 100vw;
+    width: 100%;
     display: flex;   
     position: fixed;
     z-index: 50;
+    justify-content: space-around;
 }

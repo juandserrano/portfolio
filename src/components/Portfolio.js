@@ -25,12 +25,16 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     borderRadius: 20,
     maxWidth: 1200,
-    margin: "auto",
-    padding: 20,
+    minHeight: 250,
+    margin: "10px",
+    padding: "20px",
     opacity: 0.8,
     "&:hover": {
       opacity: 1,
-      transition: "opacity 1s",
+      
+      transition: "all 1s ease-in-out",
+      
+      
     },
   },
   mainBox: {
@@ -41,7 +45,11 @@ const useStyles = makeStyles((theme) => ({
     justifySelf: "center",
   },
   header: {
-    color: "tomato",
+    color: "#FFAA00",
+    padding: "3rem 0",
+    textTransform: "uppercase",
+    fontWeight: "bold"
+
   },
 }));
 
@@ -51,14 +59,14 @@ const Portfolio = () => {
   return (
     <Box className={classes.mainBox}>
       
-      <Typography variant="h2" className={classes.header} align="center">
+      <Typography variant="h4" className={classes.header} align="center">
         Projects
       </Typography>
       <br />
       <br />
       <Grid container justify="center" alignItems="center">
         {projectos.map((project, key) => (
-          <Grid item xs={10} key={key}>
+          <Grid item xs={10} md={5} key={key}>
             <Paper elevation={3} className={classes.paper}>
               <Grid
                 container
@@ -107,7 +115,7 @@ const projectos = [
   {
     nombre: "Serra - Music Player",
     imagen: serraImg,
-    descripcion: "Chill out with some free music",
+    descripcion: "Chill out listening to some free music with this web based music player. - React",
     link: "https://music.jserrano.net",
   },
   {

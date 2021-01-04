@@ -7,7 +7,9 @@ import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Contacts from "./components/Contacts";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
+import About from "./components/About"
 
 function App() {
   return (
@@ -15,12 +17,15 @@ function App() {
       <Navbar />
       <Element name="home" />
       <Home />
+      <Element name="about" />
+      <About />
       <Element name="resume" />
       <Resume />
       <Element name="portfolio" />
       <Portfolio />
       <Element name="contact" />
       <Contacts />
+      <Footer />
     </>
   );
 }

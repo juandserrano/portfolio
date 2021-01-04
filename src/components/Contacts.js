@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 const InputField = withStyles({
   root: {
     "& label.Mui-focused": {
-      color: "tomato",
+      color: "#FFAA00",
     },
     "& label": {
       color: "tan",
@@ -55,7 +55,7 @@ const useStyles = makeStyles({
     boxShadow: "2px 2px 2px black",
   },
   header: {
-    color: "tomato",
+    color: "#FFAA00",
     textShadow: "2px 2px 2px black",
     marginBottom: 10,
     textAlign: "center",
@@ -110,7 +110,7 @@ const Contacts = () => {
       >
         <Grid item>
           <Typography className={classes.header} variant="h3">
-            Hire or contact me:
+            Contact me
           </Typography>
         </Grid>
         <Grid item>
