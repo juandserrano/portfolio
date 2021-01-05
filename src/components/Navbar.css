@@ -4,6 +4,7 @@
 }
 .nav-item {
     cursor: pointer;
+    font-family: 'Redressed', cursive;
 }
 
 .nav-link {

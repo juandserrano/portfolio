@@ -60,7 +60,7 @@ const Portfolio = () => {
   return (
     <Box className={classes.mainBox}>
       
-      <Typography variant="h4" className={classes.header} align="center">
+      <Typography variant="h4" className={classes.header} style={{fontFamily: "'Redressed', cursive"}} align="center">
         Projects
       </Typography>
       <br />
@@ -84,7 +84,7 @@ const Portfolio = () => {
                   />
                 </Grid>
                 <Grid item xs={12} md={7}>
-                  <Typography gutterBottom variant="h5">
+                  <Typography gutterBottom style={{fontFamily: "'Open Sans Condensed', sans-serif"}} variant="h5">
                     {project.nombre}
                   </Typography>
                   <Typography

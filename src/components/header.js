@@ -53,7 +53,7 @@ const Header = () => {
         alt="Juan Diego Serrano"
       />
 
-      <Typography className={classes.title} align="center" variant="h4">
+      <Typography className={classes.title} style={{fontFamily: "'Redressed', cursive"}} align="center" variant="h4">
         <Typed strings={["Juan Diego Serrano"]} typeSpeed={80} />
       </Typography>
 

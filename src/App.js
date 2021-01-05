@@ -10,6 +10,7 @@ import Contacts from "./components/Contacts";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"
 import About from "./components/About"
+import Skills from "./components/Skills"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Element name="resume" />
       <Resume />
+      <Skills />
       <Element name="portfolio" />
       <Portfolio />
       <Element name="contact" />

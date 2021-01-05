@@ -38,7 +38,11 @@ const useStyles = makeStyles({
     width: "95%",
     maxWidth: 500,
     boxShadow: "2px 2px 2px black",
-    margin: "0 auto"
+    margin: "0 auto",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+
   },
   mainDiv: {
     height: "100vh",
@@ -109,7 +113,7 @@ const Contacts = () => {
         className={classes.form}
       >
         <Grid item>
-          <Typography className={classes.header} variant="h3">
+          <Typography className={classes.header} style={{fontFamily: "'Redressed', cursive"}} variant="h3">
             Contact me
           </Typography>
         </Grid>

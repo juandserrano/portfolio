@@ -7,7 +7,7 @@
     color: #FFaa00;
     text-shadow: 2px 2px 5px black;
     text-transform: uppercase;
-    font-family: Helvetica;
+    font-family: 'Redressed', cursive;
     font-size: 34px;
     line-height: 34px;
     margin-bottom: 20px;
@@ -20,7 +20,7 @@
 #text {
     width: 70%;
     padding-left: 30px;
-    font-family: Helvetica;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 @media screen and (max-width: 992px) {
     #myPhoto {

@@ -114,7 +114,7 @@ const Resume = () => {
     <>
      
       <Box component="header" className={classes.mainContainer}>
-        <Typography variant="h4" align="center" className={classes.heading}>
+        <Typography variant="h4" align="center" style={{fontFamily: "'Redressed', cursive"}} className={classes.heading}>
           Experience
         </Typography>
 
