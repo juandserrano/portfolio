@@ -5,6 +5,7 @@ import { Element } from "react-scroll"
 import "./App.css";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
+import Portfolio2 from "./components/Portfolio2";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Contacts from "./components/Contacts";
 import Navbar from "./components/Navbar";
@@ -45,7 +46,7 @@ function App() {
       <Resume />
       <Skills />
       <Element name="portfolio" />
-      <Portfolio />
+      <Portfolio2 />
       <Element name="contact" />
       <Contacts />
       <Footer />

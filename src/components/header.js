@@ -61,11 +61,11 @@ const Header = () => {
       <Typography className={classes.subtitle} align="center" variant="h5">
         <Typed
           strings={[
-            "Frontend",
-            "Backend",
-            "MERN Stack",
-            "IT Consulting",
-            "Project Management",
+            "Full Stack",
+            "Firebase",
+            "Azure",
+            "AWS",
+            "Java",
           ]}
           typeSpeed={50}
           loop
