@@ -1,7 +1,7 @@
 .container1 {
     width: 100%;
     margin: 0;
-    padding: 80px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.5);
@@ -11,12 +11,13 @@
 .heading-container {
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .heading-container > h4 {
     font-family: "Redressed", cursive;
     color: #FFAA00;
-    padding: 3rem 0;
+    margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 2px 2px 5px black;
@@ -33,7 +34,7 @@
 
 #first {
     width: 50%;
-    background-color: blueviolet;
+    background-color: #ffaa00;
     text-align: center;
     transition: all 0.1s ease-in-out;
     font-size: xx-large;
@@ -91,7 +92,7 @@
 
 #fourth {
     width: 50%;
-    background-color: #ffaa00;
+    background-color: blueviolet;
     transition: all 0.1s ease-in-out;
     font-size: xx-large;
     border-bottom-right-radius: 20px;
@@ -120,7 +121,7 @@ p {
     text-shadow: 2px 2px 15px rgb(30, 30, 40);
     width: 40% !important;
     text-align: center;
-    margin: 60px;
+    margin: 40px 60px 40px 60px;
 }
 
 #first > p {

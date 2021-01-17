@@ -6,12 +6,12 @@ import {makeStyles} from "@material-ui/styles"
 
 const useStyles = makeStyles({
     mainContainer: {
-    paddingTop: "50px",
+    paddingTop: "20px",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     padding: "5vw",
-    margin: "20vh 10vw 20vh 10vw",
+    margin: "10vh 10vw 20vh 10vw",
     borderRadius: "30px",
     backgroundColor: "rgba(220,220,220,0.9)",
     boxShadow: "2px 2px 5px black"
