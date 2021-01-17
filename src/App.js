@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Resume from "./components/Resume";
-import { Route } from "react-router-dom";
 import { Element } from "react-scroll"
 import "./App.css";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Portfolio2 from "./components/Portfolio2";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Contacts from "./components/Contacts";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"

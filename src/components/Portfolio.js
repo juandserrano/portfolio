@@ -8,7 +8,6 @@ import {
   Typography,
   CardMedia,
 } from "@material-ui/core";
-import Navbar from "./Navbar";
 import dashboardImg from "../images/dashboard.png";
 import dndImg from "../images/dnd.png";
 import serraImg from "../images/serra.PNG";

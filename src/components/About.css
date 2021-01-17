@@ -21,6 +21,7 @@
     width: 70%;
     padding-left: 30px;
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: large;
 }
 @media screen and (max-width: 992px) {
     #myPhoto {
@@ -29,6 +30,7 @@
     #text {
         width: 100%;
         padding-left: 0;
+        font-size: medium;
     }
   }
 

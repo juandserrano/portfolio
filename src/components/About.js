@@ -11,8 +11,7 @@ const useStyles = makeStyles({
     flexDirection: "column",
     alignItems: "center",
     padding: "5vw",
-    margin: "50vh 10vw 0vh 10vw",
-    transform: "translateY(-50%)",
+    margin: "20vh 10vw 20vh 10vw",
     borderRadius: "30px",
     backgroundColor: "rgba(220,220,220,0.9)",
     boxShadow: "2px 2px 5px black"

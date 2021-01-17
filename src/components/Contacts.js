@@ -1,8 +1,7 @@
 import React, {useState} from "react";
 import { Box, Grid, Typography, Button, TextField } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/styles";
-import { Autorenew, ContactMail, ContactPhone, Send } from "@material-ui/icons";
-import Navbar from "./Navbar";
+import { Send } from "@material-ui/icons";
 
 const InputField = withStyles({
   root: {
@@ -45,6 +44,9 @@ const useStyles = makeStyles({
 
   },
   mainDiv: {
+    /*paddingTop: "80px",
+    paddingBottom: "80px",*/
+    marginTop: "50px",
     height: "100vh",
     display: "flex",
     alignItems: "center",

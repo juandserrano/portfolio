@@ -160,11 +160,12 @@ p {
     .container1 {
         padding: 0px;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0);
         
     }
 
     .top-row {
+        margin-top: 100px;
         flex-direction: column;
         width: 100%;
         align-items: center;
@@ -187,19 +188,59 @@ p {
         border-radius: 0;
         height: 300px;
     }
+    #first > p {
+        transform: rotateZ(0deg);
+        padding-right: 20px;
+    }
+    #first > img {
+        transform: rotateZ(0deg);
+        width: 30%;
+        justify-self: start;
+    }
+
     #second {
         width: 100%;
         border-radius: 0;
         height: 300px;
     }
+    #second > p {
+        transform: rotateZ(0deg);
+        padding-left: 20px;
+    }
+    #second > img {
+        transform: rotateZ(0deg);
+        width: 30%;
+        justify-self: start;
+    }
+
     #third {
         width: 100%;
         border-radius: 0;
         height: 300px;
     }
+    #third > p {
+        transform: rotateZ(0deg);
+        padding-left: 20px;
+    }
+    #third > img {
+        transform: rotateZ(0deg);
+        width: 30%;
+        justify-self: start;
+    }
+
     #fourth {
         width: 100%;
         border-radius: 0;
         height: 300px;
     }
+    #fourth > p {
+        transform: rotateZ(0deg);
+        padding-right: 20px;
+    }
+    #fourth > img {
+        transform: rotateZ(0deg);
+        width: 30%;
+        justify-self: start;
+    }
+
   }
