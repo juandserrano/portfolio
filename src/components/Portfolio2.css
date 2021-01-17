@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.5);
-    
+    height: 100vh;
 }
 
 .heading-container {
@@ -41,7 +41,7 @@
     border-top-left-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     overflow: hidden;
 }
 
@@ -101,7 +101,7 @@
     border-bottom-right-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     overflow: hidden;
 }
 
@@ -120,7 +120,7 @@ img {
 p {
     z-index: 3;
     font-family: 'Yeon Sung', cursive;
-    font-size: 2vw;
+    font-size: min(2vw, 30px);
     font-weight: 400;
     text-shadow: 2px 2px 15px rgb(30, 30, 40);
     width: 40% !important;
@@ -130,13 +130,15 @@ p {
 
 #first > p {
     transform: rotateZ(0deg);
-    width: 50%;
+    min-width: 60%;
     flex: none;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #first > img {
     transform: rotateZ(-25deg);
-    width: 30%;
+    width: 25%;
     justify-self: start;
 }
 
@@ -166,7 +168,9 @@ p {
 
 #fourth > p {
     transform: rotateZ(0deg);
-    width: 60%;
+    min-width: 60%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #fourth > img {
