@@ -1,6 +1,7 @@
 .mainInfo {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .aboutTitle {
@@ -14,20 +15,27 @@
 }
 
 #myPhoto {
-    width: 310px;
+    width: 30%;
     border-radius: 10px;
 }
-#text {
+
+.info {
     width: 70%;
+}
+
+.text {
+    width: 100% !important;
     padding-left: 30px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: large;
+    margin: 0;
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 992px) {
     #myPhoto {
       display: none;
     }
-    #text {
+    .text {
         width: 100%;
         padding-left: 0;
         font-size: medium;
