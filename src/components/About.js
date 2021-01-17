@@ -35,6 +35,10 @@ const About = () => {
                     Knowledge in AWS, Azure and Firebase, with a recent certification on Azure Fundamentals. Aside from IT knowledge, 
                     I have substantial experience in Project management, Logistics and SAP. Willing and eager to learn new things that help me as well as my company grow and improve myself every day.
                 </p>
+                <p className="text">
+                    I´m also a Member of the board of “Sol de los Andes” Foundation since 2007, an non-profit dedicated to developing community 
+                    projects focused on vulnerable teenagers and people with special educational needs (deafness, blindness, and multiple disabilities).
+                </p>
             </div>
         </div>
         

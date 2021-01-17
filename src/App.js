@@ -3,7 +3,6 @@ import Resume from "./components/Resume";
 import { Element } from "react-scroll"
 import "./App.css";
 import Home from "./components/Home";
-import Portfolio from "./components/Portfolio";
 import Portfolio2 from "./components/Portfolio2";
 import Contacts from "./components/Contacts";
 import Navbar from "./components/Navbar";
