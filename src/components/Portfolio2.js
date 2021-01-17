@@ -7,6 +7,9 @@ import imgWeather from "../images/weather.PNG";
 const Portfolio2 = () => {
   return (
     <div className="container1">
+      <div className="heading-container">
+        <h4 className="">Web Portfolio</h4>
+      </div>
       <div className="top-row">
         <div id="first" >
           <p>
