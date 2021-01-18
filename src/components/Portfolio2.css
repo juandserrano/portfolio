@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.5);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .heading-container {
@@ -182,13 +182,19 @@ p {
 @media only screen and (max-width: 768px) {
     .container1 {
         padding: 0px;
-        flex-direction: column;
         background-color: rgba(255, 255, 255, 0);
-        
+    }
+
+    .heading-container {
+        margin-top: 4rem;
+    }
+    
+    .heading-container > h4 {
+        margin-bottom: 20px;
     }
 
     .top-row {
-        margin-top: 100px;
+        margin-top: 10px;
         flex-direction: column;
         width: 100%;
         align-items: center;

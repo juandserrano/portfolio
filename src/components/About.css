@@ -35,6 +35,9 @@
     #myPhoto {
       display: none;
     }
+    .info {
+        width: 95%;
+    }
     .text {
         width: 100%;
         padding-left: 0;

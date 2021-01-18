@@ -46,7 +46,6 @@ const useStyles = makeStyles({
   mainDiv: {
     /*paddingTop: "80px",
     paddingBottom: "80px",*/
-    marginTop: "50px",
     height: "100vh",
     display: "flex",
     alignItems: "center",
