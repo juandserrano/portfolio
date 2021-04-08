@@ -29,7 +29,7 @@ const About = () => {
             <div className="info" style={{display:"flex", flexDirection:"column", alignItems: "center"}}>
                 <p className="text">
                     Hi There! I´m a web developer and your go-to IT guy. I´ve been teaching myself IT and coding since the early 2000s. I´m a Bachelor in Engineering with a Master´s in Logistics, 
-                    who in 2017 decide to pursue my passion as a career in the IT field.
+                    who in 2017 decided to pursue my passion as a career in the IT field.
                 </p>
                 <p className="text">
                     Knowledge in AWS, Azure and Firebase, with a recent certification on Azure Fundamentals. Aside from IT knowledge, 
