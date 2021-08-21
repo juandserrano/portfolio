@@ -10,7 +10,7 @@ function Stacks() {
     tag.children[0].style.opacity = 1;
   };
   return (
-    <div className="text-[#e9edde] h-screen p-16 bg-black w-full relative" id='experience'>
+    <div className="text-[#e9edde] h-screen p-16 bg-black w-full relative border border-white pl-40" id='experience'>
       <div className="absolute">
         <StackCard title='Front-End'  />
       </div>

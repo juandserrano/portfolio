@@ -12,24 +12,20 @@ export default function Home() {
         <title>Juan Diego Serrano - Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='flex'>
+      <div className='flex w-full relative'>
+        
         <Navbar />
-        <main className="flex py-0 flex-col w-screen items-center justify-center">
+    
+        <main className="flex py-0 flex-col w-full items-center justify-center">
           <Hero />
           <div className='hero-path'></div>
           <Stacks id='experience' />
           <Projects />
         </main>
-
       </div>
       
 
       
     </div>
   )
-}
-
-export function getServerSideProps(context) {
-  
-  
 }

@@ -16,7 +16,7 @@ function Navbar() {
     return (
 
 
-        <nav className="bg-[#060512] w-20 h-screen top-0 sticky flex flex-col items-center space-y-12 justify-center z-50 text-yellow-400">
+        <nav className="bg-[#060512] w-20 h-screen fixed flex flex-col items-center space-y-12 justify-center z-50 text-yellow-400">
           
           <div onMouseEnter={(event) => switchToText(event.currentTarget)}
           onMouseLeave={(event) => switchToIcon(event.currentTarget)}

@@ -9,7 +9,7 @@ function Hero() {
     tag.children[0].style.opacity = 1;
   };
   return (
-    <div className="flex justify-center text-[#ffffff] h-screen bg-[rgb(11,22,40)] px-36" id="main">
+    <div className="flex justify-center text-[#ffffff] h-screen bg-[rgb(11,22,40)] px-36 border border-white" id="main">
       <div className="flex flex-col items-center justify-center">
           
         
