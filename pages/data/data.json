@@ -1,0 +1,99 @@
+{
+	"personal": {
+		"name": "Juan Diego Serrano",
+		"title": "Software Developer",
+		"contact": {
+			"phone": "+1 (613)410-6884",
+			"email": "juandserrano@gmail.com",
+			"website": "https://www.jserrano.net",
+			"linkedin-link": "www.linkedin.com/in/juandserrano",
+			"linkedin-name": "juandserrano",
+			"github-link": "www.github.com/juandserrano",
+			"github-name": "juandserrano"
+		}
+	},
+	"education": [
+		{
+			"name": "Computer Programmer Diploma",
+			"institution": "Algonquin College, Canada, January 2021 - Present"
+		},
+		{
+			"name": "AZ-900 Azure Fundamentals Certification",
+			"institution": "Microsoft, January 2021"
+		},
+		{
+			"name": "M. Sc. Logistics Engineering",
+			"institution": "Universitaet Duisburg-Essen, Germany, 2010 - 2012"
+		},
+        {
+			"name": "B. Sc. Industrial Engineering",
+			"institution": "Universidad Javeriana, Colombia, 2003 - 2009"
+		}
+	],
+	"courses": [
+		{
+			"name": "AZ-104 Azure Adminitrator Exam Certification 2020",
+			"institution": "by Scott Duffy, Udemy, Ongoing"
+		},
+		{
+			"name": "AZ-900 Azure Fundamentals Exam Prep - Oct 2020",
+			"institution": "by Scott Duffy, Udemy, December 2020"
+		},
+		{
+			"name": "Spring & Hibernate for Beginners (incld. Spring Boot)",
+			"institution": "by Chad Darby, Udemy, August 2020"
+		},
+        {
+			"name": "Java Programming Masterclass for Software Developers",
+			"institution": "by Tim Buchalka, Udemy, June 2020"
+		},
+		{
+			"name": "React, NodeJS, Express & MongoDB - The MERN Fullstack Guide",
+			"institution": "by Academind, Udemy, March 2020"
+		},
+		{
+			"name": "Complete Python Bootcamp: From Zero to Hero in Python",
+			"institution": "by Jose Portilla, Udemy, November 2019"
+		},
+		{
+			"name": "Lean Six Sigma Yellow Belt Certification",
+			"institution": "by Lean Six Sigma Institute, June 2019"
+		}
+	],
+	"skills": ["Python", "Java", "Linux", "HTML/CSS", "Node.js", "React", "Vue.js", "Javascript", "Git", "Project Management"],
+	"experience": [
+		{
+		"position": "LATAM Engineering Lead",
+		"company": "Newell Brands",
+		"dates": "September 2012 - December 2020",
+		"tasks": ["Project Management", "IT Support", "SAP BPC", "BW & WM Reporting", "Data Analysis", "Productivity/KPI control", "Task automation", "RFQ/RFP"]
+		},
+		{
+		"position": "Computer Support Technician, Volunteer",
+		"company": "Fundacion Sol de los Andes",
+		"dates": "January 2008 - Present",
+		"tasks": ["IT Consulting", "End-user support & Troubleshooting"]
+		},
+		{
+		"position": "Logistics Analyst",
+		"company": "Newell Brands",
+		"dates": "December 2008 - February 2010",
+		"tasks": ["Operation analysis", "3PL Negotiation", "Layout Design & Slotting"]
+		}
+	],
+	"languages": [
+		{
+		"name": "Spanish",
+		"skill": "Native"
+		},
+		{
+		"name": "English",
+		"skill": "Fluent"
+		},
+		{
+		"name": "German",
+		"skill": "Basic"
+		}
+	],
+	"social": "Member of the board of “Sol de los Andes” Foundation since 2007, an non-profit dedicated to developing community projects focused on vulnerable teenagers and people with special educational needs (deafness, blindness, and multiple disabilities)"
+}
