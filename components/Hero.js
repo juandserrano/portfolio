@@ -10,7 +10,7 @@ function Hero() {
       id="main"
     >
       <div className="flex flex-col items-center justify-center">
-        <div className='mb-10'>
+        <div className='mb-10 border-4 rounded-full border-yellow-400'>
           <Image className="rounded-full" src={jds}/>
         </div>
         <h1 className="glitch w-[800px] h-28">

@@ -1,14 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 import ProjectCard from "./ProjectCard";
 import projects from '../pages/data/projects';
+import { useEffect } from "react";
 
 
 function Projects() {
-
-    
    
     return (
-        <div className="h-screen w-full projects-path py-56 px-12 border pl-32" id="projects">
+        <div className="h-screen w-full projects-path py-56 px-12 pl-32 overflow-hidden" id="projects">
             <div className='w-full h-full flex items-center justify-center overflow-hidden relative'>
                 
                     

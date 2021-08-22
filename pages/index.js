@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React from 'react';
+import React, { useState } from 'react';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
 import Projects from '../components/Projects';
@@ -7,6 +7,8 @@ import Socials from '../components/Socials';
 import Stacks from '../components/Stacks';
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState(null);
+
   return (
     <div className="bg-yellow-400">
       <Head>
@@ -18,11 +20,11 @@ export default function Home() {
       </Head>
       <div className='flex w-full relative'>
         
-        <Navbar />
+        <Navbar setActiveTab={setActiveTab} activeTab={activeTab} />
     
         <main className="flex py-0 flex-col w-full items-center justify-center">
           <Hero />
-          <div className='hero-path'></div>
+          <div className='hero-path z-50'></div>
           <Stacks id='experience' />
           <Projects />
           <Socials />
