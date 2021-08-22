@@ -1,4 +1,5 @@
-import { InformationCircleIcon, CodeIcon, LibraryIcon, MailIcon, UserIcon } from '@heroicons/react/solid';
+/* eslint-disable react/react-in-jsx-scope */
+import { InformationCircleIcon, CodeIcon, MailIcon, UserIcon } from '@heroicons/react/solid';
 
 function Navbar() {
     const switchToText = (tag) => {
@@ -16,7 +17,7 @@ function Navbar() {
     return (
 
 
-        <nav className="bg-[#060512] w-20 h-screen fixed flex flex-col items-center space-y-12 justify-center z-50 text-yellow-400">
+        <nav className="bg-[rgb(11,22,40)] w-20 h-screen fixed flex flex-col items-center space-y-12 justify-center z-50 text-yellow-400">
           
           <div onMouseEnter={(event) => switchToText(event.currentTarget)}
           onMouseLeave={(event) => switchToIcon(event.currentTarget)}
@@ -30,7 +31,7 @@ function Navbar() {
           onMouseLeave={(event) => switchToIcon(event.currentTarget)}
           onClick={() => window.location.replace("/#experience")}
           className="text-xs flex flex-col items-center justify-center relative h-10 w-full transition-opacity duration-500 cursor-pointer">
-              <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0">Experience</p>
+              <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0">Stacks</p>
               <InformationCircleIcon className='h-full w-full z-50 absolute'/>
           </div>
 
@@ -44,13 +45,7 @@ function Navbar() {
           
           <div onMouseEnter={(event) => switchToText(event.currentTarget)}
           onMouseLeave={(event) => switchToIcon(event.currentTarget)}
-          className="text-xs flex flex-col items-center justify-center relative h-10 w-full transition-opacity duration-500 cursor-pointer">
-              <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0">Education</p>
-              <LibraryIcon className='h-full w-full z-50 absolute'/>
-          </div>
-          
-          <div onMouseEnter={(event) => switchToText(event.currentTarget)}
-          onMouseLeave={(event) => switchToIcon(event.currentTarget)}
+          onClick={() => window.location.replace("/#socials")}
           className="text-xs flex flex-col items-center justify-center relative h-10 w-full transition-opacity duration-500 cursor-pointer">
               <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0">Contact</p>
               <MailIcon className='h-full w-full z-50 absolute'/>

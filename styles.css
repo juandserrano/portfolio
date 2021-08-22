@@ -1,7 +1,7 @@
 .glitch {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     position: relative;
     text-align: center;
   
@@ -9,7 +9,7 @@
       -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
       0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
   
-    animation: glitch 500ms infinite;
+    animation: glitch 1500ms infinite;
   }
   
   .glitch span {
@@ -19,16 +19,16 @@
   }
   
   .glitch span:first-child {
-    animation: glitch 650ms infinite;
-    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+    animation: glitch 1650ms infinite;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 29%, 0% 25%);
     transform: translate(-0.025em, -0.0125em);
     /* color: green; */
     opacity: 0.8;
   }
   
   .glitch span:last-child {
-    animation: glitch 375ms infinite;
-    clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0 100%);
+    animation: glitch 1375ms infinite;
+    clip-path: polygon(0 22%, 100% 8%, 100% 100%, 0% 100%);
     transform: translate(0.0125em, 0.025em);
     /* color: red; */
     opacity: 0.8;
@@ -74,6 +74,7 @@
 
   html {
     scroll-behavior: smooth;
+    font-family: 'Roboto Mono', monospace;
   }
 
 .hero-background {
@@ -94,7 +95,7 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(
     display: block;
     box-sizing: border-box;
     height: screen;
-    background-color: rgb(251, 191, 36);
+    background-color: #0b1628;
     clip-path: ellipse(98% 49% at 49% 50%);
     width: 100%;
     }
@@ -118,4 +119,8 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(251, 191, 36, 0.5);
+}
+
+.myTextShadow {
+  text-shadow: 2px 2px 5px #000000;
 }

@@ -1,16 +1,10 @@
+/* eslint-disable react/react-in-jsx-scope */
 import StackCard from "./StackCard";
 
 function Stacks() {
-  const effectOn = (tag) => {
-    tag.children[0].style.opacity = 0;
-    tag.children[1].style.opacity = 1;
-  };
-  const effectOff = (tag) => {
-    tag.children[1].style.opacity = 0;
-    tag.children[0].style.opacity = 1;
-  };
+  
   return (
-    <div className="text-[#e9edde] h-screen p-16 bg-black w-full relative border border-white pl-40" id='experience'>
+    <div className="h-screen p-16 bg-yellow-400 w-full relative pl-40" id='experience'>
       <div className="absolute">
         <StackCard title='Front-End'  />
       </div>
