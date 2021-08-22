@@ -14,7 +14,7 @@ function Projects() {
                     
                         {projects.map((item) => (
                             
-                                <ProjectCard key={item.name} image={item.image} title={item.name} text={item.text}/>
+                                <ProjectCard key={item.name} github={item.github} link={item.url} image={item.image} title={item.name} text={item.text}/>
 
                             
                         ))}

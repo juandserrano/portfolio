@@ -17,7 +17,7 @@ function Hero() {
           <span className="w-full">Juan Diego Serrano</span>
           <span className="w-full">Juan Diego Serrano</span>
         </h1>
-        <p className="text-center w-1/2 text-2xl mt-5">
+        <p className="text-center w-2/3 text-xl mt-5">
           Hello there! My name is Juan and I&apos;m a Ottawa-based Full Stack
           Developer. I have Experience in HTML/CSS/JS, React, RESTful APIs,
           Express, Node, Python and Java, among other supporting technologies.

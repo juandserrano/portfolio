@@ -124,3 +124,15 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(
 .myTextShadow {
   text-shadow: 2px 2px 5px #000000;
 }
+
+.show-on-scroll {
+  opacity: 0;
+  transition: all;
+  transition-duration: 2000ms;
+  transform: translate(100%, 0%);
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
