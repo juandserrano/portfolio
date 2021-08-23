@@ -61,7 +61,7 @@ function Stacks() {
       ctx.fillRect(0, 0, w, h);
 
       ctx.fillStyle = "#e6a920";
-      ctx.font = "15pt monospace";
+      ctx.font = "34pt monospace";
 
       ypos.forEach((y, ind) => {
         const text = String.fromCharCode(Math.random() * 128);
@@ -87,19 +87,19 @@ function Stacks() {
   };
   return (
     <div
-      className="h-screen bg-yellow-400 w-full relative pl-40 overflow-hidden"
+      className="w-full h-screen relative overflow-hidden px-4 md:pl-20"
       id="experience"
     >
       <canvas
         id="canv"
-        className="absolute z-0 top-0 opacity-100"
-        width={1500}
+        className="absolute z-0 top-0 left-0 h-full w-screen opacity-100"
+        width={10}
         height={2000}
       ></canvas>
-      <div className="flex flex-col justify-around h-screen py-32">
+      <div className="flex flex-col h-full justify-around items-center md:items-start">
         <div
           id="frontend"
-          className="show-on-scroll w-[20rem]"
+          className="show-on-scroll w-[18rem] md:w-[20rem]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -122,7 +122,7 @@ function Stacks() {
           />
         </div>
         <div id='backend'
-          className="show-on-scroll w-[20rem]"
+          className="show-on-scroll w-[18rem] md:w-[20rem]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -136,7 +136,7 @@ function Stacks() {
           />
         </div>
         <div id='database'
-          className="show-on-scroll w-[20rem]"
+          className="show-on-scroll w-[18rem] md:w-[20rem]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -150,7 +150,7 @@ function Stacks() {
           />
         </div>
         <div id='devops'
-          className="show-on-scroll w-[20rem]"
+          className="show-on-scroll w-[18rem] md:w-[20rem]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}

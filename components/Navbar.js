@@ -23,15 +23,15 @@ function Navbar({ activeTab, setActiveTab }) {
   };
 
   return (
-    <nav className="bg-[rgb(11,22,40)] w-20 h-screen fixed flex flex-col items-center space-y-12 justify-center z-50 text-yellow-400">
+    <nav className="bg-[rgb(11,22,40)] w-16 md:w-20 min-h-full fixed left-0 flex flex-col items-center space-y-12 justify-center z-50 text-yellow-400">
       <div
         id='iAbout'
         onMouseEnter={(event) => switchToText(event.currentTarget)}
         onMouseLeave={(event) => switchToIcon(event.currentTarget)}
         onClick={(e) => handleClick(e.currentTarget, "/#main")}
-        className="text-xs flex flex-col items-center justify-center relative h-10 w-full transition-opacity duration-500 cursor-pointer"
+        className="text-xs flex flex-col items-center justify-center relative h-6 md:h-10 w-full transition-opacity duration-500 cursor-pointer"
       >
-        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0">
+        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0 text-xs md:text-md">
           About
         </p>
         <UserIcon className="h-full w-full z-50 absolute" />
@@ -42,9 +42,9 @@ function Navbar({ activeTab, setActiveTab }) {
         onMouseEnter={(event) => switchToText(event.currentTarget)}
         onMouseLeave={(event) => switchToIcon(event.currentTarget)}
         onClick={(e) => handleClick(e.currentTarget, "/#experience")}
-        className="text-xs flex flex-col items-center justify-center relative h-10 w-full transition-opacity duration-500 cursor-pointer"
+        className="text-xs flex flex-col items-center justify-center relative h-6 md:h-10 w-full transition-opacity duration-500 cursor-pointer"
       >
-        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0">
+        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0 text-xs md:text-md">
           Stacks
         </p>
         <InformationCircleIcon className="h-full w-full z-50 absolute" />
@@ -54,9 +54,9 @@ function Navbar({ activeTab, setActiveTab }) {
         onMouseEnter={(event) => switchToText(event.currentTarget)}
         onMouseLeave={(event) => switchToIcon(event.currentTarget)}
         onClick={(e) => handleClick(e.currentTarget, "/#projects")}
-        className="text-xs flex flex-col items-center justify-center relative h-10 w-full transition-opacity duration-500 cursor-pointer"
+        className="text-xs flex flex-col items-center justify-center relative h-6 md:h-10 w-full transition-opacity duration-500 cursor-pointer"
       >
-        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0">
+        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0 text-xs md:text-md">
           Projects
         </p>
         <CodeIcon className="h-full w-full z-50 absolute" />
@@ -66,9 +66,9 @@ function Navbar({ activeTab, setActiveTab }) {
         onMouseEnter={(event) => switchToText(event.currentTarget)}
         onMouseLeave={(event) => switchToIcon(event.currentTarget)}
         onClick={(e) => handleClick(e.currentTarget, "/#socials")}
-        className="text-xs flex flex-col items-center justify-center relative h-10 w-full transition-opacity duration-500 cursor-pointer"
+        className="text-xs flex flex-col items-center justify-center relative h-6 md:h-10 w-full transition-opacity duration-500 cursor-pointer"
       >
-        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0">
+        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0 text-xs md:text-md">
           Contact
         </p>
         <MailIcon className="h-full w-full z-50 absolute" />

@@ -75,6 +75,7 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Roboto Mono', monospace;
+    height: 100%;
   }
 
 .hero-background {
@@ -85,20 +86,32 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(
 .hero-path {
   display: block;
   box-sizing: border-box;
-  height: 300px;
+  height: 5rem;
   background-color: #0b1628;
   width: 100%;
-  clip-path: ellipse(159% 100% at 4.22% 0%);
+  clip-path: ellipse(100% 100% at 4.22% 0%);
   }
 
-  .projects-path {
-    display: block;
-    box-sizing: border-box;
-    height: screen;
-    background-color: #0b1628;
-    clip-path: ellipse(98% 49% at 49% 50%);
-    width: 100%;
-    }
+.projects-path {
+  display: block;
+  box-sizing: border-box;
+  height: screen;
+  background-color: #0b1628;
+  width: 100%;
+
+}
+  @media only screen and (min-width: 900px) {
+    .projects-path {
+      display: block;
+      box-sizing: border-box;
+      height: screen;
+      background-color: #0b1628;
+      clip-path: ellipse(98% 49% at 49% 50%);
+      width: 100%;
+      }
+  }
+  
+  
 
     /* width */
 ::-webkit-scrollbar {
@@ -135,10 +148,6 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(
 .is-visible {
   opacity: 1;
   transform: translate(0%, 0%);
-}
-
-:root {
-  --bg-color-blue: #060512;
 }
 
 .slide {
