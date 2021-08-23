@@ -18,7 +18,7 @@ function Projects() {
   const prevSlide = () => {
       setCurrent(current === 0 ? length - 1 : current - 1);
   }
-  console.log(current)
+  
   if(!Array.isArray(projects) || projects.length <= 0) {
       return null;
   }
@@ -30,7 +30,7 @@ function Projects() {
     >
       <div className="w-full h-full flex items-center justify-center overflow-visible relative">
         {projects.map((item, index) => (
-            <div className={index === current ? 'slide active flex relative h-full' : 'slide flex relative'} key={index}>
+            <div className={index === current ? 'slide active flex items-center relative h-full' : 'slide flex relative'} key={index}>
                 {index === current && (
                     <ProjectCard
                       github={item.github}

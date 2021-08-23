@@ -7,7 +7,7 @@ function ProjectCard({ image, text, link, github }) {
         <Image
           className="absolute"
           src={image}
-          objectFit="cover"
+          objectFit="fill"
           layout="fill"
         />
       </div>

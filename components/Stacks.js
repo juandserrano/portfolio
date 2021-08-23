@@ -165,7 +165,7 @@ function Stacks() {
         </div>
       </div>
       {activeStack && (
-        <div className='rounded-full flex bg-[rgb(11,22,40)] justify-center items-center absolute -translate-x-1/2 -translate-y-1/2 h-1/2 w-1/2 top-1/2 left-[60%] text-yellow-400'>
+        <div className='rounded-full flex frosty shadow-lg justify-center items-center absolute -translate-x-1/2 -translate-y-1/2 h-1/2 w-1/2 top-1/2 left-[60%] text-yellow-400'>
         <p className='text-yellow-400'>{activeStack.id}</p>
     </div>
       )}
