@@ -24,7 +24,7 @@ export default function Home() {
     
         <main className="flex py-0 flex-col w-full items-center justify-center">
           <Hero />
-          <div className='hero-path z-50'></div>
+          <div className='hero-path z-30'></div>
           <Stacks id='experience' />
           <Projects />
           <Socials />

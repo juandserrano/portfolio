@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/react-in-jsx-scope */
 import Image from "next/image";
 
 function ProjectCard({ image, text, link, github }) {
