@@ -5,6 +5,7 @@ function ProjectCard({ image, text, link, github }) {
     <div className="w-[600px] mx-5 h-3/4 p-8 frosty shadow-lg rounded-3xl flex flex-col items-center justify-between flex-shrink-0">
       <div className="relative w-full h-2/3 self-start border-2 border-yellow-400">
         <Image
+          priority={true}
           className="absolute"
           src={image}
           objectFit="fill"
