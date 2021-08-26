@@ -44,37 +44,7 @@ function Stacks() {
     loop();
   }, []);
 
-  useEffect(() => {
-    const canvas = document.getElementById("canv");
-    const ctx = canvas.getContext("2d");
-
-    const w = (canvas.width = document.body.offsetWidth);
-    const h = (canvas.height = document.body.offsetHeight);
-    const cols = Math.floor(w / 20) + 1;
-    const ypos = Array(cols).fill(0);
-
-    ctx.fillStyle = "#e6a920";
-    ctx.fillRect(0, 0, w / 20, h / 20);
-
-    function matrix() {
-      ctx.fillStyle = "#fbbf24";
-      ctx.fillRect(0, 0, w, h);
-
-      ctx.fillStyle = "#e6a920";
-      ctx.font = "34pt monospace";
-
-      ypos.forEach((y, ind) => {
-        const text = String.fromCharCode(Math.random() * 128);
-        const x = ind * 20;
-        ctx.fillText(text, x, y);
-        if (y > 100 + Math.random() * 10000) ypos[ind] = 0;
-        else ypos[ind] = y + 10;
-      });
-    }
-
-    setInterval(matrix, 50);
-  }, []);
-
+  
   const showStuff = (tag) => {
     tag.children[0].style.background = "rgb(11,22,40)";
     tag.children[0].children[1].style.color = "rgb(251, 191, 36)";
@@ -90,12 +60,6 @@ function Stacks() {
       className="w-full h-screen relative overflow-hidden px-4 md:pl-20"
       id="experience"
     >
-      <canvas
-        id="canv"
-        className="absolute z-0 top-0 left-0 h-full w-screen opacity-100"
-        width={10}
-        height={2000}
-      ></canvas>
       <div className="flex flex-col h-full justify-around items-center md:items-start">
         <div
           id="frontend"
