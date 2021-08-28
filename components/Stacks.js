@@ -52,13 +52,13 @@ function Stacks() {
   };
   return (
     <div
-      className="w-full h-screen relative overflow-hidden p-4 md:pl-20"
+      className="w-full h-screen relative overflow-hidden p-4 xl:pl-20"
       id="experience"
     >
-      <div className="flex flex-col h-full justify-between md:relative items-center md:items-start">
+      <div className="flex flex-col h-full justify-around xl:relative items-center xl:items-start">
         <div
           id="frontend"
-          className="show-on-scroll w-[18rem] md:w-[20rem] md:absolute md:top-[5%]"
+          className="show-on-scroll w-[18rem] xl:w-[20rem] xl:absolute xl:top-[5%]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -81,7 +81,7 @@ function Stacks() {
         </div>
         <div
           id="cloud"
-          className="show-on-scroll w-[18rem] md:w-[20rem] md:ml-[25rem] md:top-[25%] md:absolute"
+          className="show-on-scroll w-[18rem] xl:w-[20rem] xl:ml-[25rem] xl:top-[25%] xl:absolute"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -94,10 +94,10 @@ function Stacks() {
             stacks={["AWS", "Azure", "Google Cloud/Firebase"]}
           />
         </div>
-        <div className='space-y-12 md:space-y-0 md:absolute md:top-[45%]'>
+        <div className='space-y-[6vh] xl:space-y-0 xl:absolute xl:top-[45%]'>
           <div
             id="backend"
-            className="show-on-scroll md:absolute w-[18rem] md:w-[20rem]"
+            className="show-on-scroll xl:absolute w-[18rem] xl:w-[20rem]"
             onMouseEnter={(e) => {
               showStuff(e.currentTarget);
             }}
@@ -112,7 +112,7 @@ function Stacks() {
           </div>
           <div
             id="domain"
-            className="show-on-scroll w-[18rem] md:absolute md:ml-[50rem] md:w-[20rem]"
+            className="show-on-scroll w-[18rem] xl:absolute xl:ml-[50rem] xl:w-[20rem]"
             onMouseEnter={(e) => {
               showStuff(e.currentTarget);
             }}
@@ -128,7 +128,7 @@ function Stacks() {
         </div>
         <div
           id="database"
-          className="show-on-scroll w-[18rem] md:w-[20rem] md:ml-[25rem] md:absolute md:top-[65%]"
+          className="show-on-scroll w-[18rem] xl:w-[20rem] xl:ml-[25rem] xl:absolute xl:top-[65%]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -143,7 +143,7 @@ function Stacks() {
         </div>
         <div
           id="devops"
-          className="show-on-scroll w-[18rem] md:w-[20rem] md:absolute bottom-[5%]"
+          className="show-on-scroll w-[18rem] xl:w-[20rem] xl:absolute bottom-[5%]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
