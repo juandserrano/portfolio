@@ -15,9 +15,8 @@ function Hero() {
           </h1>
         
         <p className="px-6 md:px-[4.5rem] text-sm md:text-xl md:max-w-4xl text-justify">
-          Hello there! My name is Juan and I&apos;m a Ottawa-based Full Stack
-          Developer. I have Experience in HTML/CSS/JS, React, RESTful APIs,
-          Express, Node, Python and Java, among other supporting technologies.
+          Hello there! My name is Juan and I&apos;m a Ottawa-based Developer. I have Experience in HTML/CSS/JS, React, RESTful APIs,
+          Express, Java and in working with Pandas and TensorFlow for Data Analysis and Machine Learning, among other supporting technologies. 
         </p>
         <div className='text-2xl md:text-3xl mt-10 text-yellow-400'>
           <TypeIt

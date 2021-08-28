@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import StackCard from "./StackCard";
 
 function Stacks() {
-  const [activeStack, setActiveStack] = useState(null);
 
   useEffect(() => {
     // Helper function from: http://stackoverflow.com/a/7557433/274826
@@ -44,26 +43,23 @@ function Stacks() {
     loop();
   }, []);
 
-  
   const showStuff = (tag) => {
     tag.children[0].style.background = "rgb(11,22,40)";
     tag.children[0].children[1].style.color = "rgb(251, 191, 36)";
-    setActiveStack(tag);
   };
   const hideStuff = (tag) => {
     tag.children[0].style.background = "rgb(251, 191, 36)";
     tag.children[0].children[1].style.color = "rgb(11,22,40)";
-    setActiveStack(null);
   };
   return (
     <div
-      className="w-full h-screen relative overflow-hidden px-4 md:pl-20"
+      className="w-full h-screen relative overflow-hidden p-4 md:pl-20"
       id="experience"
     >
-      <div className="flex flex-col h-full justify-around items-center md:items-start">
+      <div className="flex flex-col h-full justify-between md:relative items-center md:items-start">
         <div
           id="frontend"
-          className="show-on-scroll w-[18rem] md:w-[20rem]"
+          className="show-on-scroll w-[18rem] md:w-[20rem] md:absolute md:top-[5%]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -80,13 +76,13 @@ function Stacks() {
               "TypeScript",
               "React",
               "Vue.js",
-              "Next.js",
-              "RESTful APIs"
+              "Next.js"
             ]}
           />
         </div>
-        <div id='backend'
-          className="show-on-scroll w-[18rem] md:w-[20rem]"
+        <div
+          id="cloud"
+          className="show-on-scroll w-[18rem] md:w-[20rem] md:ml-[25rem] md:top-[25%] md:absolute"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -95,12 +91,45 @@ function Stacks() {
           }}
         >
           <StackCard
-            title="Back-End"
-            stacks={["Node.js", "Express", "Python", "Java"]}
+            title="Cloud"
+            stacks={["AWS", "Azure", "Google Cloud/Firebase"]}
           />
         </div>
-        <div id='database'
-          className="show-on-scroll w-[18rem] md:w-[20rem]"
+        <div className='space-y-12 md:space-y-0 md:absolute border border-white md:top-[45%]'>
+          <div
+            id="backend"
+            className="show-on-scroll md:absolute w-[18rem] md:w-[20rem]"
+            onMouseEnter={(e) => {
+              showStuff(e.currentTarget);
+            }}
+            onMouseLeave={(e) => {
+              hideStuff(e.currentTarget);
+            }}
+          >
+            <StackCard
+              title="Back-End"
+              stacks={["Node.js", "Express", "Python", "Java", "RESTful APIs"]}
+            />
+          </div>
+          <div
+            id="domain"
+            className="show-on-scroll w-[18rem] md:absolute md:ml-[50rem] md:w-[20rem]"
+            onMouseEnter={(e) => {
+              showStuff(e.currentTarget);
+            }}
+            onMouseLeave={(e) => {
+              hideStuff(e.currentTarget);
+            }}
+          >
+            <StackCard
+              title="Domain Knowledge"
+              stacks={["Project Management", "Scrum", "Logistics & Supply Chain"]}
+            />
+          </div>
+        </div>
+        <div
+          id="database"
+          className="show-on-scroll w-[18rem] md:w-[20rem] md:ml-[25rem] md:absolute md:top-[65%]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -109,12 +138,13 @@ function Stacks() {
           }}
         >
           <StackCard
-            title="Database"
-            stacks={["MySQL", "PostgreSQL", "MongoDB", "Oracle"]}
+            title="Data/ML"
+            stacks={["MySQL", "PostgreSQL", "MongoDB", "Pandas", "MatplotLib", "TensorFlow"]}
           />
         </div>
-        <div id='devops'
-          className="show-on-scroll w-[18rem] md:w-[20rem]"
+        <div
+          id="devops"
+          className="show-on-scroll w-[18rem] md:w-[20rem] md:absolute bottom-[5%]"
           onMouseEnter={(e) => {
             showStuff(e.currentTarget);
           }}
@@ -128,12 +158,6 @@ function Stacks() {
           />
         </div>
       </div>
-      {activeStack && (
-        <div className='rounded-full flex frosty shadow-lg justify-center items-center absolute -translate-x-1/2 -translate-y-1/2 h-1/2 w-1/2 top-1/2 left-[60%] text-yellow-400'>
-        <p className='text-yellow-400'>{activeStack.id}</p>
-    </div>
-      )}
-      
     </div>
   );
 }

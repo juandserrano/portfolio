@@ -7,6 +7,13 @@
         "github": "https://github.com/juandserrano/sweetstays"
     },
     {
+        "name": "Moober",
+        "text": "Uber clone: React, Google Maps API",
+        "image": "/images/weatherBig.png",
+        "url": "https://t-weather.jserrano.net",
+        "github": "https://github.com/juandserrano/weatherapp_pwa"
+    },
+    {
         "name": "PuraPaja",
         "text": "Private Chat Client: React, Firebase, Google API, NoSQL, PWA",
         "image": "/images/ppBig.png",
