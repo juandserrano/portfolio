@@ -6,7 +6,6 @@ function Stacks() {
   useEffect(() => {
     // Helper function from: http://stackoverflow.com/a/7557433/274826
     function isElementInViewport(el) {
-      // special bonus for those using jQuery
       if (typeof jQuery === "function" && el instanceof jQuery) {
         el = el[0];
       }
@@ -95,7 +94,7 @@ function Stacks() {
             stacks={["AWS", "Azure", "Google Cloud/Firebase"]}
           />
         </div>
-        <div className='space-y-12 md:space-y-0 md:absolute border border-white md:top-[45%]'>
+        <div className='space-y-12 md:space-y-0 md:absolute md:top-[45%]'>
           <div
             id="backend"
             className="show-on-scroll md:absolute w-[18rem] md:w-[20rem]"
