@@ -1,7 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
+import { useEffect } from "react";
 import TypeIt from "typeit-react";
 import Image from 'next/image';
 function Hero() {
+  useEffect( async () => {
+    await fetch('https://jds-portfolio-backend.herokuapp.com/api')
+    .then(response => response.json())
+    .then(data => console.log(data));
+  }, [])
   
   return (
     
