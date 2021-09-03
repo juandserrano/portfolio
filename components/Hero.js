@@ -11,16 +11,16 @@ function Hero() {
   
   return (
     
-      <div className="flex flex-col w-full h-screen bg-[rgb(11,22,40)] text-gray-200 items-center justify-center" id="main">
+      <div className="flex pt-5 flex-col w-full h-screen bg-[rgb(11,22,40)] text-gray-200 items-center justify-center" id="main">
         <div className='mb-10 mt-5 border-4 rounded-full w-40 h-40 md:w-[40vh] md:h-[40vh] relative border-yellow-400'>
           <img src='/images/Foto3.jpg' className='rounded-full h-full w-full'/>
         </div>
         
-          <h1 className="text-4xl md:text-6xl px-5 text-center mb-5 md:mb-10">
+          <h1 className="text-3xl md:text-5xl px-5 text-center mb-5 md:mb-10">
             Juan Diego Serrano
           </h1>
         
-        <p className="px-6 md:px-[4.5rem] text-sm md:text-xl md:max-w-4xl text-justify">
+        <p className="px-6 md:px-[4.5rem] text-sm md:text-lg md:max-w-4xl text-justify">
           Hello there! My name is Juan and I&apos;m an Ottawa-based Developer. I have Experience in HTML/CSS/JS, React, RESTful APIs,
           Express, Java and in working with Pandas and TensorFlow for Data Analysis and Machine Learning, among other supporting technologies. 
         </p>
