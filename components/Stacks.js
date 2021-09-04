@@ -74,8 +74,7 @@ function Stacks() {
               "JavaScript",
               "TypeScript",
               "React",
-              "Vue.js",
-              "Next.js"
+              "Vue.js"
             ]}
           />
         </div>
@@ -107,7 +106,7 @@ function Stacks() {
           >
             <StackCard
               title="Back-End"
-              stacks={["Node.js", "Express", "Python", "Java", "RESTful APIs"]}
+              stacks={["Node.js", "Express", "Python", "Java", "RESTful APIs", "Spring Boot"]}
             />
           </div>
           <div
