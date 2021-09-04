@@ -21,6 +21,14 @@
         "github": ""
     },
     {
+        "name": "Snake!",
+        "text": "Classic Nokia snake game",
+        "image": "/images/phone.png",
+        "url": "https://juandserrano.github.io/snake-game/",
+        "github": "https://github.com/juandserrano/snake-game"
+
+    },
+    {
         "name": "Serra",
         "text": "Chill out music app: React",
         "image": "/images/musicBig.png",
