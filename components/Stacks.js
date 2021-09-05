@@ -72,7 +72,6 @@ function Stacks() {
               "HTML",
               "CSS",
               "JavaScript",
-              "TypeScript",
               "React",
               "Vue.js"
             ]}
@@ -137,7 +136,7 @@ function Stacks() {
         >
           <StackCard
             title="Data/ML"
-            stacks={["MySQL", "PostgreSQL", "MongoDB", "Pandas", "MatplotLib", "TensorFlow"]}
+            stacks={["MySQL", "PostgreSQL", "MongoDB", "Pandas", "MatplotLib"]}
           />
         </div>
         <div
