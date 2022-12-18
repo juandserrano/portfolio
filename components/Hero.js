@@ -1,13 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { useEffect } from "react";
 import TypeIt from "typeit-react";
-import Image from 'next/image';
 function Hero() {
-  useEffect( async () => {
-    await fetch('https://jds-portfolio-backend.herokuapp.com/api')
-    .then(response => response.json())
-    .then(data => console.log(data));
-  }, [])
   
   return (
     
@@ -21,8 +14,7 @@ function Hero() {
           </h1>
         
         <p className="px-6 md:px-[4.5rem] text-sm md:text-lg md:max-w-4xl text-justify">
-          Hello there! My name is Juan and I&apos;m an Ottawa-based Developer. I have Experience in HTML/CSS/JS, React, RESTful APIs,
-          Express, Java and in working with Pandas and TensorFlow for Data Analysis and Machine Learning, among other supporting technologies. 
+          Hello there! My name is Juan and I&apos;m an Ottawa-based Full-Stack Developer. I've worked with HTML/CSS/TS, React, RESTful APIs, Express, Java and Go. Experience developing microservices with tools such as Elasticsearch and Kafka.
         </p>
         <div className='text-2xl md:text-3xl mt-10 text-yellow-400 mb-10'>
           <TypeIt
