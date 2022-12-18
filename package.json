@@ -12,7 +12,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@heroicons/react": "^1.0.3",
-    "next": "latest",
+    "next": "^12.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "typeit-react": "^2.0.1"

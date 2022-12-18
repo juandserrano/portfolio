@@ -3,21 +3,21 @@
         "name": "SweetStays",
         "text": "AirBnb clone: NextJS, React, MapBox API",
         "image": "/images/ssBig.png",
-        "url": "https://sweetstays.jserrano.net",
+        "url": "https://ss.juanserrano.net",
         "github": "https://github.com/juandserrano/sweetstays"
     },
     {
         "name": "Moober *Work in Progress*",
         "text": "Uber clone: React, Google Maps API",
         "image": "/images/mooberBig.png",
-        "url": "https://moober.jserrano.net",
+        "url": "https://moober.juanserrano.net",
         "github": "https://github.com/juandserrano/moober-react"
     },
     {
         "name": "PuraPaja",
         "text": "Private Chat Client: React, Firebase, Google API, NoSQL, PWA",
         "image": "/images/ppBig.png",
-        "url": "https://pp.jserrano.net",
+        "url": "https://pp.juanserrano.net",
         "github": ""
     },
     {
@@ -32,14 +32,14 @@
         "name": "Serra",
         "text": "Chill out music app: React",
         "image": "/images/musicBig.png",
-        "url": "https://music.jserrano.net",
+        "url": "https://music.juanserrano.net",
         "github": "https://github.com/juandserrano/Serra-music-app"
     },
     {
         "name": "T-Weather",
         "text": "Simple weather app: React, OpenWeatherMap, PWA",
         "image": "/images/weatherBig.png",
-        "url": "https://t-weather.jserrano.net",
+        "url": "https://weather.juanserrano.net",
         "github": "https://github.com/juandserrano/weatherapp_pwa"
     }
 
