@@ -71,6 +71,7 @@ function Stacks() {
             stacks={[
               "HTML",
               "CSS",
+              "TypeScript",
               "JavaScript",
               "React",
               "Vue.js"
@@ -105,7 +106,7 @@ function Stacks() {
           >
             <StackCard
               title="Back-End"
-              stacks={["Node.js", "Express", "Python", "Java", "RESTful APIs", "Spring Boot"]}
+              stacks={["Go", "Elasticsearch", "Apache Kafka", "Node.js", "Express", "Python", "Java", "RESTful APIs"]}
             />
           </div>
           <div
@@ -120,7 +121,7 @@ function Stacks() {
           >
             <StackCard
               title="Domain Knowledge"
-              stacks={["Project Management", "Scrum", "Logistics & Supply Chain"]}
+              stacks={["Project Management", "Microservices", "Scrum", "Logistics & Supply Chain"]}
             />
           </div>
         </div>
@@ -136,7 +137,7 @@ function Stacks() {
         >
           <StackCard
             title="Data/ML"
-            stacks={["MySQL", "PostgreSQL", "MongoDB", "Pandas", "MatplotLib"]}
+            stacks={["MySQL", "PostgreSQL", "MongoDB", "Oracle"]}
           />
         </div>
         <div
@@ -150,7 +151,7 @@ function Stacks() {
           }}
         >
           <StackCard
-            title="DevOps"
+            title="Other"
             stacks={["Git", "Docker", "Npm/Yarn", "Linux"]}
           />
         </div>
