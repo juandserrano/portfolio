@@ -1,5 +1,5 @@
 import Bullet from "./Bullet";
-
+import data from "../public/data.json"
 /* eslint-disable react/react-in-jsx-scope */
 function Work() {
   
@@ -12,18 +12,11 @@ function Work() {
        <div style={{display:'flex', flexDirection:'row'}}> 
         <img src='images/rockport.png' className='rounded-xl' style={{height:64, alignSelf:'center'}}/>
         <p className="px-6 md:px-[4.5rem] text-sm md:text-lg md:max-w-4xl text-justify">
-        Part of the Network Manager backend team at Rockport Networks. Responsible for maintaining code for various internal services.
+          {data.work.rockport.description}
         <br/>
-        Worked on bugfixing, feature implementation, APIs, external service updating and testing.
+        
         <div className="pt-3">
-        <Bullet text={"Go"}/>
-        <Bullet text={"Bash"}/>
-        <Bullet text={"Python"}/>
-        <Bullet text={"Docker"}/>
-        <Bullet text={"ELK"}/>
-        <Bullet text={"Kafka"}/>
-        <Bullet text={"Git"}/>
-        <Bullet text={"Jira"}/>
+            {data.work.rockport.stack.map(s => <Bullet text={s}/>)}
         </div>
         </p>
         </div>

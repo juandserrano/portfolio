@@ -1,0 +1,9 @@
+{
+  "hero": "Hello there! My name is Juan and I'm an Ottawa-based Full-Stack Developer. I've worked with HTML/CSS/TS, React, RESTful APIs, Express, Java and Go. Experience developing microservices with tools such as Elasticsearch and Kafka.",
+  "work": {
+    "rockport": {
+      "description": "Part of the Network Manager backend team at Rockport Networks. Responsible for maintaining code for various internal services. Worked on bugfixing, feature implementation, APIs, external service updating and testing.",
+      "stack": ["Go", "Bash", "Python", "Docker", "ELK", "Kafka", "Git", "Jira"]
+    }
+  }
+}
