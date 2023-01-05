@@ -5,10 +5,10 @@
         "image": "/images/ssBig.png",
         "url": "https://ss.juanserrano.net",
         "github": "https://github.com/juandserrano/sweetstays",
-        "stack": ["NextJS", "React", "MapBox API"]
+        "stack": ["React", "MapBox API"]
     },
     {
-        "name": "Moober *Work in Progress*",
+        "name": "Moober",
         "text": "Uber clone: React, Google Maps API",
         "image": "/images/mooberBig.png",
         "url": "https://moober.juanserrano.net",
