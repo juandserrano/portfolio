@@ -12,7 +12,9 @@ function ProjectCard({ title, image, text, link, github, stack }) {
           >
         <img src={image} className='hover:scale-105 active:scale-95 hover:shadow-md transition-all rounded-xl h-full w-full mb-3'/>
           </a>
-        {stack?.map((e) => <span className='text-white'><Bullet text={e}/></span>)}
+        <div className="flex">  
+        {stack?.map((e) => <span className='text-white text-xs md:text-base'><Bullet text={e}/></span>)}
+        </div>
       </div>
       <div className="flex flex-col h-2/6 items-center text-white">
         <p className="p-3 mb-10 myTextShadow text-lg text-center">{/*text*/}</p>
