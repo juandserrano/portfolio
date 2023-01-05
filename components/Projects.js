@@ -38,6 +38,7 @@ function Projects() {
                       image={item.image}
                       title={item.name}
                       text={item.text}
+                      stack={item.stack}
                     />
                 )}
             </div>
