@@ -4,6 +4,7 @@ import {
   CodeIcon,
   MailIcon,
   UserIcon,
+  OfficeBuildingIcon
 } from "@heroicons/react/solid";
 
 function Navbar({ activeTab, setActiveTab }) {
@@ -48,6 +49,18 @@ function Navbar({ activeTab, setActiveTab }) {
           Stacks
         </p>
         <InformationCircleIcon className="h-full w-full z-50 absolute" />
+      </div>
+
+      <div id='iWork'
+        onMouseEnter={(event) => switchToText(event.currentTarget)}
+        onMouseLeave={(event) => switchToIcon(event.currentTarget)}
+        onClick={(e) => handleClick(e.currentTarget, "/#work")}
+        className="text-xs flex flex-col items-center justify-center relative h-6 md:h-10 w-full transition-opacity duration-500 cursor-pointer"
+      >
+        <p className="h-full flex items-center absolute transition-opacity duration-500 opacity-0 text-xs md:text-md">
+          Work
+        </p>
+        <OfficeBuildingIcon className="h-full w-full z-50 absolute" />
       </div>
 
       <div id='iProjects'

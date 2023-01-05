@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import Projects from '../components/Projects';
 import Socials from '../components/Socials';
 import Stacks from '../components/Stacks';
+import Work from '../components/Work';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState(null);
@@ -23,6 +24,7 @@ export default function Home() {
           <Hero />
           <div className='hero-path z-30'></div>
           <Stacks />
+          <Work />
           <Projects />
           <Socials />
       </main>
