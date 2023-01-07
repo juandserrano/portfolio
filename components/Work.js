@@ -5,7 +5,7 @@ function Work() {
   
   return (
     
-      <div className="px-6 flex pt-5 flex-col w-full h-screen bg-[rgb(11,22,40)] text-gray-200 items-center justify-center" id="work">
+      <div className="px-6 flex pt-5 flex-col w-full h-screen bg-[#00080b] text-gray-200 items-center justify-center" id="work">
           <h1 className="text-3xl md:text-5xl px-5 text-center mb-5 md:mb-10">
             Work Experience
           </h1>

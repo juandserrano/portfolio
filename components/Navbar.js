@@ -24,7 +24,7 @@ function Navbar({ activeTab, setActiveTab }) {
   };
 
   return (
-    <nav className="bg-[rgb(11,22,40)] w-16 md:w-20 min-h-full fixed left-0 flex flex-col items-center space-y-12 justify-center z-50 text-yellow-400">
+    <nav className="bg-[#00080b] w-16 md:w-20 min-h-full fixed left-0 flex flex-col items-center space-y-12 justify-center z-50 text-yellow-400">
       <div
         id='iAbout'
         onMouseEnter={(event) => switchToText(event.currentTarget)}

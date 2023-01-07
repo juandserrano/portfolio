@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <Navbar setActiveTab={setActiveTab} activeTab={activeTab} />
     
-      <main className="w-screen h-full bg-yellow-400">
+      <main className="w-screen h-full bg-[#010c11]">
           <Hero />
           <div className='hero-path z-30'></div>
           <Stacks />

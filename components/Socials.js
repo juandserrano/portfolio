@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Socials() {
   return (
     <div
-      className="h-screen w-full bg-[rgb(11,22,40)] flex px-3 md:px-40 items-center justify-around text-yellow-400 z-40"
+      className="h-screen w-full bg-[#021318] flex px-3 md:px-40 items-center justify-around text-yellow-400 z-40"
       id="socials"
     >
       <a href="https://github.com/juandserrano">

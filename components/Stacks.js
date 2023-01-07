@@ -43,12 +43,12 @@ function Stacks() {
   }, []);
 
   const showStuff = (tag) => {
-    tag.children[0].style.background = "rgb(11,22,40)";
-    tag.children[0].children[1].style.color = "rgb(251, 191, 36)";
+    tag.children[0].style.background = "#00080b";
+    tag.children[0].children[1].style.color = "#0c201e";
   };
   const hideStuff = (tag) => {
-    tag.children[0].style.background = "rgb(251, 191, 36)";
-    tag.children[0].children[1].style.color = "rgb(11,22,40)";
+    tag.children[0].style.background = "#010c11";
+    tag.children[0].children[1].style.color = "#fbbf24";
   };
   return (
     <div

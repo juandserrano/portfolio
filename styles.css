@@ -79,15 +79,15 @@
   }
 
 .hero-background {
-  background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(2,0,52,1) 100%);
+  background: #00080b;
+background: linear-gradient(180deg, #00080b 0%, #00080b 48%, #00080b 100%);
 }
 
 .hero-path {
   display: block;
   box-sizing: border-box;
   height: 5rem;
-  background-color: #0b1628;
+  background-color: #00080b;
   width: 100%;
   clip-path: ellipse(100% 100% at 4.22% 0%);
   }
@@ -96,7 +96,7 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(
   display: block;
   box-sizing: border-box;
   height: screen;
-  background-color: #0b1628;
+  background-color: #00080b;
   width: 100%;
 
 }
@@ -105,7 +105,7 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(
       display: block;
       box-sizing: border-box;
       height: screen;
-      background-color: #0b1628;
+      background-color: #010c11;
       clip-path: ellipse(98% 49% at 49% 50%);
       width: 100%;
       }
@@ -120,13 +120,13 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,54,1) 48%, rgba(
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #060512;
+  background: #0c201e;
   opacity: 1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(251, 191, 36);
+  background: #0c201e;
 }
 
 /* Handle on hover */
