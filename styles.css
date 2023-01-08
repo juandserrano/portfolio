@@ -96,7 +96,7 @@ background: linear-gradient(180deg, #00080b 0%, #00080b 48%, #00080b 100%);
   display: block;
   box-sizing: border-box;
   height: screen;
-  background-color: #00080b;
+  background-color: #010c11;
   width: 100%;
 
 }
@@ -105,7 +105,7 @@ background: linear-gradient(180deg, #00080b 0%, #00080b 48%, #00080b 100%);
       display: block;
       box-sizing: border-box;
       height: screen;
-      background-color: #010c11;
+      background-color: #00080b;
       clip-path: ellipse(98% 49% at 49% 50%);
       width: 100%;
       }
