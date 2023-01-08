@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import data from "../public/data.json"
 import Image from "next/image";
-import background from "../public/images/Silent_coding_home_office.png"  
+import background from "../public/images/Silent_coding_home_office2.png"  
 import TypeIt from "typeit-react";
 function Hero() {
   
