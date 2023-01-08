@@ -7,7 +7,7 @@ function Hero() {
   
   return (
     
-      <div className="flex pt-5 flex-col w-full h-screen text-gray-200 items-center justify-center" id="main">
+      <div className="relative flex pt-5 flex-col w-full h-screen text-gray-200 items-center justify-center" id="main">
           <h1 className="z-10 text-3xl md:text-5xl px-5 text-center mb-5 md:mb-10">
             Juan Diego Serrano
           </h1>
@@ -16,6 +16,7 @@ function Hero() {
     src={background}
     layout="fill"
     objectFit="cover"
+    className=""
   />
 </div>
         <p className="z-10 px-6 md:px-[4.5rem] text-sm md:text-lg md:max-w-4xl text-justify">
