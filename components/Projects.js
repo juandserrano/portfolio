@@ -44,11 +44,11 @@ function Projects() {
             </div>
                 
         ))}
-        <div onClick={prevSlide} className="absolute flex text-gray-400 justify-center items-center hover:animate-ping w-16 h-16 left-4 bg-gray-200 bg-opacity-30 rounded-full cursor-pointer hover:text-white select-none">
-          <FontAwesomeIcon icon={faChevronLeft} size="2x" />
+        <div onClick={prevSlide} className="absolute flex text-gray-400 justify-center items-center hover:animate-ping w-10 h-10 md:w-16 md:h-16 left-4 bg-gray-200 bg-opacity-30 rounded-full cursor-pointer hover:text-white select-none">
+          <FontAwesomeIcon icon={faChevronLeft} size="x" />
         </div>
-        <div onClick={nextSlide} className="absolute flex text-gray-400 justify-center items-center hover:animate-ping w-16 h-16 right-4 bg-gray-200 bg-opacity-30 rounded-full cursor-pointer hover:text-white select-none">
-          <FontAwesomeIcon icon={faChevronRight} size="2x" />
+        <div onClick={nextSlide} className="absolute flex text-gray-400 justify-center items-center hover:animate-ping w-10 h-10 md:w-16 md:h-16 right-4 bg-gray-200 bg-opacity-30 rounded-full cursor-pointer hover:text-white select-none">
+          <FontAwesomeIcon icon={faChevronRight} size="x" />
         </div>
       </div>
     </div>
