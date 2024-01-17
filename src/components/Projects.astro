@@ -1,40 +1,65 @@
 ---
-import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
-import LinkButton from "./LinkButton.astro"
+import GitHub from "./icons/GitHub.astro";
+import API from "./icons/API.astro";
+import React from "./icons/React.astro";
+import LinkButton from "./LinkButton.astro";
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  MAPBOX: {
+    name: "MapBox API",
     class: "bg-black text-white",
-    icon: NextJS,
+    icon: API,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  GOOGLEMAPS: {
+    name: "Google Maps API",
+    class: "bg-black text-white",
+    icon: API,
+  },
+  OPENWEATHERMAP: {
+    name: "OpenWeatheMap API",
+    class: "bg-black text-white",
+    icon: API,
+  },
+  REACT: {
+    name: "React",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: React,
   },
-}
+};
 const PROJECTS = [
   {
-    title: "WIP",
-    description:
-      "WIP",
-    link: "https://juanserrano.net/",
-    github: "https://github.com/juandserrano",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    title: "SweetStays",
+    description: "AirBnB Clone.",
+    link: "https://ss.juanserrano.net/",
+    github: "https://github.com/juandserrano/sweetstays",
+    image: "/projects/ssBig.png",
+    tags: [TAGS.MAPBOX, TAGS.REACT],
   },
   {
-    title: "WIP",
-    description:
-      "WIP",
-    link: "https://juandserrano.net",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    title: "Moober",
+    description: "Uber-type app.",
+    link: "https://moober.juanserrano.net",
+    github: "https://github.com/juandserrano/moober-react",
+    image: "/projects/mooberBig.png",
+    tags: [TAGS.GOOGLEMAPS, TAGS.REACT],
   },
-]
+  {
+    title: "Serra",
+    description: "Music player built in React.",
+    link: "https://music.juanserrano.net",
+    github: "https://github.com/juandserrano/serra-music-app",
+    image: "/projects/musicBig.png",
+    tags: [TAGS.REACT],
+  },
+  {
+    title: "Weather",
+    description: "Simple weather app.",
+    link: "https://weather.juanserrano.net",
+    github: "https://github.com/juandserrano/weatherapp_pwa",
+    image: "/projects/weatherBig.png",
+    tags: [TAGS.OPENWEATHERMAP, TAGS.REACT],
+  },
+];
 ---
 
 <section class="flex flex-col gap-y-16">
