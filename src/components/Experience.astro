@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Currently...",
+    title: "Software Developer - Cerio",
+    description:
+      "Build a fabric manager for PCIe composability (CDI) using NETCONF/YANG. Research and implement a NETCONF server/client for 1 manager and n nodes.",
+    stack: "Go, C, NETCONF, YANG, Docker, Bash"
+  },
+  {
+    date: "January 2022 - December 2022",
+    title: "Junior Software Developer - Cerio",
+    description:
+      "Part of the Network Manager backend team at Rockport Networks (now Cerio). Responsible for maintaining code for our microservices. Bugfixing, feature implementation, APIs, 3rd party library research and testing",
+    stack: "Go, Python, Kafka, Elasticsearch, REST, Docker, Bash"
+  },
+  {
+    date: "September 2015 - December 2021",
+    title: "LATAM Engineering Lead - Newell Brands",
+    description:
+      "Design, implement, and manage logistic productivity projects in all LATAM countries to meet corporate savings goal ($600k+ YOY)",
+    stack: "Python (pandas, numpy, matplotlib)"
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
